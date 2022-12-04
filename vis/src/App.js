@@ -1,6 +1,5 @@
 import './App.css';
 import { Vega } from 'react-vega';
-import mapData from "./data/world-110m.json";
 
 
 const spec = {
@@ -15,7 +14,7 @@ const spec = {
       "name": "type",
       "value": "equirectangular",
     },
-    { "name": "scale", "value": 120,
+    { "name": "scale", "value": 150,
    },
     { "name": "rotate0", "value": 0},
     { "name": "rotate1", "value": 0},
@@ -25,12 +24,9 @@ const spec = {
     { "name": "translate0", "update": "width / 2" },
     { "name": "translate1", "update": "height / 2" },
 
-    { "name": "graticuleDash", "value": 0,
-      "bind": {"input": "radio", "options": [0, 3, 5, 10]} },
-    { "name": "borderWidth", "value": 1,
-      "bind": {"input": "text"} },
-    { "name": "background", "value": "#ffffff",
-      "bind": {"input": "color"} },
+    { "name": "graticuleDash", "value": 0},
+    { "name": "borderWidth", "value": 1 },
+    { "name": "background", "value": "#ffffff"},
   ],
 
   "projections": [
@@ -54,14 +50,35 @@ const spec = {
     }
   ],
 
+  "scales": [{
+    "name": "color",
+    "type": "linear",
+    "domain": [0, 400],
+    "range": {"scheme": "blues", "count": 7}
+  }
+
+  ],
+
   "data": [
     {
+      "name": "drink",
+      "url": "http://147.46.240.50:4999/typepercountry.tsv",
+      "format": {"type": "tsv", "parse": "auto"}
+
+    },
+    {
       "name": "world",
-      "url": "https://vega.github.io/editor/data/world-110m.json",
+      "url": "http://147.46.240.50:4999/world-110m.json",
+      // "url": "https://vega.github.io/editor/data/world-110m.json",
       "format": {
         "type": "topojson",
         "feature": "countries"
-      }
+      },
+      "transform": [
+        { "type": "lookup", "from": "drink", "key": "id", "fields": ["id"], "values": ["wine"] },
+        { "type": "filter", "expr": "datum.wine != null" }
+
+      ]
     },
     {
       "name": "graticule",
@@ -91,15 +108,23 @@ const spec = {
       "type": "shape",
       "from": {"data": "world"},
       "encode": {
+        "enter": {
+          "tooltip": {
+            "signal": "format(datum.wine, '.2f')"
+          }
+        },
         "update": {
           "strokeWidth": {"signal": "+borderWidth"},
           "stroke": {"signal": "'#bbb'"},
-          "fill": {"signal": "'#000'"},
+          // "fill": {"signal": "'#000'"},
+          "fill": {"scale": "color", "field": "wine"},
           "zindex": {"value": 0}
         },
         "hover": {
           "strokeWidth": {"signal": "+borderWidth + 1"},
           "stroke": {"value": "firebrick"},
+          "fill": {"value": "red"},
+
           "zindex": {"value": 1}
         }
       },
@@ -110,16 +135,6 @@ const spec = {
   ]
 }
 
-const data = {
-  world: mapData,
-  graticule:  {
-    "name": "graticule",
-    "transform": [
-      { "type": "graticule" }
-    ]
-  }
-};
-console.log(data)
 
 
 function App() {
