@@ -107,7 +107,7 @@ export function LineChart() {
           ))}
         </select> status by age
       </div>
-      <VegaLite className="mt-5 ml-20" spec={spec}/>
+      <VegaLite className="mt-5 ml-20" spec={spec} actions={false}/>
     </div>
   )
 }

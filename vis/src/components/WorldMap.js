@@ -25,15 +25,13 @@ export function WorldMap(){
     const [data, setData] = useState(data2018)
 
 
-    
-    
 
     let spec = {
         "$schema": "https://vega.github.io/schema/vega/v5.json",
         "description": "A configurable map of countries of the world.",
         "width": 950,
-        "height": 500,
-        "autosize": "none",
+        "height": 450,
+        "padding": {"top": 20, "left": 0, "bottom": 0, "right": 0},
       
         "signals": [
         //   { "name": "scale", "value": 150,},
@@ -154,7 +152,7 @@ export function WorldMap(){
           "type": "linear",
           "domain": {"data": "world", "field": {"signal": "alcoholType"}},
           // "domain":  "[wine_min, wine_max]",
-          "range": {"scheme": "blues", "count": 7}
+          "range": {"scheme": "blues"}
         }
       
         ],
@@ -248,7 +246,6 @@ export function WorldMap(){
       
 
       useEffect(() => {
-
         
         (function() {
           
@@ -269,14 +266,15 @@ export function WorldMap(){
           })
           
         });    
-      }, []);
+      }, [year, alcoholType]);
 
     return(
             <Grid
-            margin='medium'
+            gap="1.25rem"
+            margin={{top: 0, bottom: 0, left: 'medium', right: 'medium'}}
+            style={{paddingTop: '24px', paddingBottom: '24px'}}
             rows={['40px', '450px', '700px' ]}
             columns={['630px','320px', '']}
-            gap="small"
             areas={[
               { name: 'main', start: [0, 0], end: [1, 1]},
               { name: 'nav', start: [2, 0], end: [2, 0] },
@@ -286,7 +284,9 @@ export function WorldMap(){
 
             ]}
           >
-            <Box gridArea="nav"  elevation='small' style={{'display':'inline'}}>
+    
+    <Box gridArea='main' round="xsmall" id='world-map' elevation='medium' background="white"></Box>
+    <Box background="white" round="xsmall" gridArea="nav" elevation='small' style={{'display':'inline'}}>
             <Box width="40%" style={{display: 'inline-block'}}>
                 <Select
       options={['2010', '2015', '2018']}
@@ -308,11 +308,8 @@ export function WorldMap(){
     />
     </Box>
     </Box>
-    <Box gridArea='main' id='world-map' elevation='medium'>
-            {/* <Vega style={{'display': 'inline'}} spec={spec} actions={false}/> */}
-            </Box>
-            <Box gridArea='pie' id='pie-chart' elevation='medium'></Box>
-            <Box gridArea='list' elevation='medium'>
+            <Box background="white" round="xsmall" gridArea='pie' id='pie-chart' elevation='medium'></Box>
+            <Box gridArea='list' elevation='medium' background="white" round="xsmall">
                 <Grommet theme={{
                     dataTable: {
                         body: {
@@ -346,7 +343,7 @@ export function WorldMap(){
                 ]} data={data} />
                 </Grommet>
             </Box>
-            <Box gridArea='scatter' elevation='medium'>
+            <Box background="white" round="xsmall" gridArea='scatter' elevation='medium'>
             <Scatter  />
             </Box>
             </Grid>

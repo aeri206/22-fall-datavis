@@ -152,7 +152,7 @@ export function ScatterPlot() {
     <div className="place-items-center pt-5">
       <div className="w-2/3 float-left px-8">
         <div ref={ref}>
-          <VegaLite spec={spec} className='w-full'/>
+          <VegaLite spec={spec} className='w-full' actions={false}/>
           <div className="my-1 content-center">
             x-axis : 
             <select onChange={e => setXaxis(e.target.value)} value={xaxis} className='border'>

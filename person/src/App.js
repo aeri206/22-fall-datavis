@@ -15,7 +15,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <div className="grid grid-rows-2 grid-cols-2 h-screen w-screen py-5 px-20 gap-5 bg-slate-300">
+        <div className="grid grid-rows-2 grid-cols-2 h-screen w-screen py-6 px-6 gap-5 bg-slate-300">
         <Paper elevation={3}>
           <AboutMe/>
         </Paper>
