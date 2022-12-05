@@ -1,0 +1,174 @@
+	code	id	name
+0	AF	4	Afghanistan
+1	AL	8	Albania
+2	DZ	12	Algeria
+3	AO	24	Angola
+4	AQ	10	Antarctica
+5	AR	32	Argentina
+6	AM	51	Armenia
+7	AU	36	Australia
+8	AT	40	Austria
+9	AZ	31	Azerbaijan
+10	BS	44	Bahamas
+11	BD	50	Bangladesh
+12	BY	112	Belarus
+13	BE	56	Belgium
+14	BZ	84	Belize
+15	BJ	204	Benin
+16	BT	64	Bhutan
+17	BO	68	"Bolivia, Plurinational State of"
+18	BA	70	Bosnia and Herzegovina
+19	BW	72	Botswana
+20	BR	76	Brazil
+21	BN	96	Brunei Darussalam
+22	BG	100	Bulgaria
+23	BF	854	Burkina Faso
+24	BI	108	Burundi
+25	KH	116	Cambodia
+26	CM	120	Cameroon
+27	CA	124	Canada
+28	CF	140	Central African Republic
+29	TD	148	Chad
+30	CL	152	Chile
+31	CN	156	China
+32	CO	170	Colombia
+33	CG	178	Congo
+34	CD	180	"Congo, the Democratic Republic of the"
+35	CR	188	Costa Rica
+36		384	Cote d'Ivoire
+37	HR	191	Croatia
+38	CU	192	Cuba
+39	CY	196	Cyprus
+40	CZ	203	Czech Republic
+41	DK	208	Denmark
+42	DJ	262	Djibouti
+43	DO	214	Dominican Republic
+44	EC	218	Ecuador
+45	EG	818	Egypt
+46	SV	222	El Salvador
+47	GQ	226	Equatorial Guinea
+48	ER	232	Eritrea
+49	EE	233	Estonia
+50	ET	231	Ethiopia
+51	FK	238	Falkland Islands (Malvinas)
+52	FJ	242	Fiji
+53	FI	246	Finland
+54	FR	250	France
+55	TF	260	French Southern Territories
+56	GA	266	Gabon
+57	GM	270	Gambia
+58	GE	268	Georgia
+59	DE	276	Germany
+60	GH	288	Ghana
+61	GR	300	Greece
+62	GL	304	Greenland
+63	GT	320	Guatemala
+64	GN	324	Guinea
+65	GW	624	Guinea-Bissau
+66	GY	328	Guyana
+67	HT	332	Haiti
+68	HN	340	Honduras
+69	HU	348	Hungary
+70	IS	352	Iceland
+71	IN	356	India
+72	ID	360	Indonesia
+73	IR	364	"Iran, Islamic Republic of"
+74	IQ	368	Iraq
+75	IE	372	Ireland
+76	IL	376	Israel
+77	IT	380	Italy
+78	JM	388	Jamaica
+79	JP	392	Japan
+80	JO	400	Jordan
+81	KZ	398	Kazakhstan
+82	KE	404	Kenya
+83	KP	408	"Korea, Democratic People's Republic of"
+84	KR	410	"Korea, Republic of"
+85	KW	414	Kuwait
+86	KG	417	Kyrgyzstan
+87	LA	418	Lao People's Democratic Republic
+88	LV	428	Latvia
+89	LB	422	Lebanon
+90	LS	426	Lesotho
+91	LR	430	Liberia
+92	LY	434	Libya
+93	LT	440	Lithuania
+94	LU	442	Luxembourg
+95		807	"Macedonia, the former Yugoslav Republic of"
+96	MG	450	Madagascar
+97	MW	454	Malawi
+98	MY	458	Malaysia
+99	ML	466	Mali
+100	MR	478	Mauritania
+101	MX	484	Mexico
+102	MD	498	"Moldova, Republic of"
+103	MN	496	Mongolia
+104	ME	499	Montenegro
+105	MA	504	Morocco
+106	MZ	508	Mozambique
+107	MM	104	Myanmar
+108	NA	516	Namibia
+109	NP	524	Nepal
+110	NL	528	Netherlands
+111	NC	540	New Caledonia
+112	NZ	554	New Zealand
+113	NI	558	Nicaragua
+114	NE	562	Niger
+115	NG	566	Nigeria
+116	NO	578	Norway
+117	OM	512	Oman
+118	PK	586	Pakistan
+119	PA	591	Panama
+120	PG	598	Papua New Guinea
+121	PY	600	Paraguay
+122	PE	604	Peru
+123	PH	608	Philippines
+124	PL	616	Poland
+125	PT	620	Portugal
+126	PR	630	Puerto Rico
+127	QA	634	Qatar
+128	RO	642	Romania
+129	RU	643	Russian Federation
+130	RW	646	Rwanda
+131	SA	682	Saudi Arabia
+132	SN	686	Senegal
+133	RS	688	Serbia
+134	SL	694	Sierra Leone
+135	SK	703	Slovakia
+136	SI	705	Slovenia
+137	SB	90	Solomon Islands
+138	SO	706	Somalia
+139	ZA	710	South Africa
+140	SS	728	South Sudan
+141	ES	724	Spain
+142	LK	144	Sri Lanka
+143	SD	729	Sudan
+144	SR	740	Suriname
+145	SZ	748	Swaziland
+146	SE	752	Sweden
+147	CH	756	Switzerland
+148	SY	760	Syrian Arab Republic
+149	TW	158	"Taiwan, Province of China"
+150	TJ	762	Tajikistan
+151	TZ	834	"Tanzania, United Republic of"
+152	TH	764	Thailand
+153	TL	626	Timor-Leste
+154	TG	768	Togo
+155	TT	780	Trinidad and Tobago
+156	TN	788	Tunisia
+157	TR	792	Turkey
+158	TM	795	Turkmenistan
+159	UG	800	Uganda
+160	UA	804	Ukraine
+161	AE	784	United Arab Emirates
+162	GB	826	United Kingdom
+163	US	840	United States
+164	UY	858	Uruguay
+165	UZ	860	Uzbekistan
+166	VU	548	Vanuatu
+167	VE	862	"Venezuela, Bolivarian Republic of"
+168	VN	704	Viet Nam
+169	EH	732	Western Sahara
+170	YE	887	Yemen
+171	ZM	894	Zambia
+172	ZW	716	Zimbabwe

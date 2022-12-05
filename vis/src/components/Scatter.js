@@ -2,7 +2,7 @@ import { VegaLite } from 'react-vega';
 
 const spec = {
   "config": {"view": {"continuousWidth": 500, "continuousHeight": 500}},
-  "data": {"url": "http://localhost:8080/scatter/data_final.tsv"},
+  "data": {"url": "http://147.46.240.50:4999/scatter/data_final.tsv"},
   "usermeta": [
     "country",
     "continent",
@@ -126,7 +126,7 @@ function Scatter() {
     return (
       <div className="Scatter">
         <h1>Scatter</h1>
-        <VegaLite spec={spec}/>
+        <VegaLite spec={spec} actions={false}/>
       </div>
     );
   }
