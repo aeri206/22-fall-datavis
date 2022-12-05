@@ -15,7 +15,7 @@ export function ScatterPlot() {
   const [width, setWidth] = useState(0)
   const [height, setHeight] = useState(0)
 
-  const [countryList, setCountryList] = useState(["Republic of Korea", "Albania", 'c', 'd', 'e'])
+  const [countryList, setCountryList] = useState([1])
   const [xaxis, setXaxis] = useState("gdp");
   const [yaxis, setYaxis] = useState("happiness_score");
   const [aggdata, setAggData] = useState();
@@ -55,8 +55,7 @@ export function ScatterPlot() {
         return d
       })
       x = x.sort((a, b) => a.diff - b.diff)
-      console.log(x.map(d => {return {'name':d.Name, 'diff':d.diff}}))
-      x = x.map(d => d.Name)
+      x = x.map(d => ({'name': d.Name, 'value': d.diff}))
       setCountryList(x.slice(0, 5))
     }
   }, [xaxis, yaxis, aggdata, age, gdp, happy, health])
@@ -154,7 +153,7 @@ export function ScatterPlot() {
       <div className="w-2/3 float-left px-8">
         <div ref={ref}>
           <VegaLite spec={spec} className='w-full'/>
-          <div className="my-1">
+          <div className="my-1 content-center">
             x-axis : 
             <select onChange={e => setXaxis(e.target.value)} value={xaxis} className='border'>
               {axisList.map((item) => (
@@ -184,8 +183,12 @@ export function ScatterPlot() {
         {
          countryList.map((d, i) => {
           return (
-            <div className="text-left ml-10" onMouseOver={() => setSelected(d)} onMouseOut={() => setSelected("")}>
-              {i + 1}. {d}
+            <div className="text-left ml-5" onMouseOver={() => setSelected(d.name)} onMouseOut={() => setSelected("")}>
+              {i + 1}. {d.name}
+              <div className="w-[10rem] bg-gray-300 h-4">
+                  <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none" 
+                      style={{width: countryList[0].value * 100 / d.value + '%'}}>{ (countryList[0].value * 100 / d.value).toFixed(3) + "%"}</div>
+              </div>
             </div>
           )
          }) 

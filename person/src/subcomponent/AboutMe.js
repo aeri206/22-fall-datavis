@@ -17,11 +17,11 @@ export function AboutMe() {
     setMe('age', age_)
   }, [age_])
   return (
-    <div className="">
-      <div className='text-2xl my-3'>About You</div>
+    <div className="text-sm">
+      <div className='text-xl my-3'>About You</div>
       <div className='text-left ml-10'>
         <div>Age : {age} years old</div>
-        <div className="mx-20">
+        <div className="ml-10 mr-20">
           <Slider
             aria-label="Restricted values"
             defaultValue={20}
@@ -44,11 +44,11 @@ export function AboutMe() {
         </div>
         <div>Gender</div>
         <RadioGroup row defaultValue={gender} onChange={d => setMe('gender', d.target.value)}>
-          <FormControlLabel value="female" control={<Radio />} label="Female" />
-          <FormControlLabel value="male" control={<Radio />} label="Male" />
-          <FormControlLabel value="other" control={<Radio />} label="Other" />
+          <FormControlLabel value="female" control={<Radio color="success" size="small"/>} label="Female" />
+          <FormControlLabel value="male" control={<Radio color="success" size="small"/>} label="Male" />
+          <FormControlLabel value="other" control={<Radio color="success" size="small"/>} label="Other" />
         </RadioGroup>
-        <div className='grid grid-rows-2 grid-cols-2 h-full w-full'>
+        <div className='grid grid-rows-2 grid-cols-2 h-full w-full gap-2'>
           <div>
             <div>GDP</div>
             <TextField
@@ -58,7 +58,6 @@ export function AboutMe() {
               }}
               type="number"
               placeholder="your gdp"
-              helperText="Value bigger than 0 "
               defaultValue={gdp}
               onChange={d => setMe('gdp', d.target.value)}
             />
@@ -72,7 +71,6 @@ export function AboutMe() {
               }}
               type="number"
               placeholder="your health"
-              helperText="Value bigger than 0 "
               defaultValue={health}
               onChange={d => setMe('health', d.target.value)}
             />
@@ -86,7 +84,6 @@ export function AboutMe() {
                 step: 0.1,
               }}
               placeholder="your happiness"
-              helperText="Value between 0 and 10"
               defaultValue={happy}
               onChange={d => setMe('happy', d.target.value)}
             />
@@ -100,7 +97,6 @@ export function AboutMe() {
               }}
               type="number"
               placeholder="your alcohol consumption"
-              helperText="Value bigger than 0 "
               defaultValue={alcohol}
               onChange={d => setMe('alcohol', d.target.value)}
             />
