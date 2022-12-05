@@ -1,0 +1,174 @@
+Country	id	Beer	Wine	Sprites
+Afghanistan	4			
+Albania	8	34.3	26.5	37.6
+Antarctica	10			
+Algeria	12	57.3	24.4	18.3
+Angola	24	70.3	17.6	11.3
+Azerbaijan	31	61.5	36.9	0
+Argentina	32	39.9	40.2	9.6
+Australia	36	39.9	37.5	12.9
+Austria	40	53.5	31.6	14.9
+Bahamas	44	39.2	16.6	41.2
+Bangladesh	50			
+Armenia	51	10.6	7	82.3
+Belgium	56	44.4	38.3	14.2
+Bhutan	64	46.2	4.2	49.6
+Bolivia	68	72.8	4.3	21.3
+Bosnia and Herzegovina	70	75.8	8.6	12.4
+Botswana	72	48.1	23.5	4.4
+Brazil	76	61.8	3.4	34.3
+Belize	84	69.1	1.9	26.7
+Solomon Islands	90	93.3	2.9	3.3
+Brunei	96	100	0	0
+Bulgaria	100	38.8	17.2	42.9
+Myanmar	104	22.4	9.8	67.7
+Burundi	108	39.3	0.1	0.1
+Belarus	112	22.8	2.2	49
+Cambodia	116	88.1	0.6	11.2
+Cameroon	120	43.5	1.4	0.1
+Canada	124	45.1	25.6	25.6
+Central African Republic	140	25.9	0.7	0
+Sri Lanka	144	13.2	0.3	84.9
+Chad	148	70.2	1	5.3
+Chile	152	36.1	33.1	30.8
+China	156	29.6	3.1	67.2
+"Taiwan, Province of China"	158			
+Colombia	170	71.3	1.1	27.2
+Congo	178	84.4	4.7	10.3
+Democratic Republic of Congo	180	38.9	0.6	0.7
+Costa Rica	188	64.1	7.2	27.9
+Croatia	191	44.5	39	13
+Cuba	192	37.3	4.9	57.4
+Cyprus	196	29.7	28.4	41.9
+Czechia	203	53.3	21.3	25.4
+Benin	204	63.7	9.6	13.1
+Denmark	208	37.4	44.7	17.1
+Dominican Republic	214	52.2	4.4	41.9
+Ecuador	218	79.9	1.5	17.8
+El Salvador	222	47.8	1.3	50.7
+Equatorial Guinea	226	83	17	0
+Ethiopia	231	54.6	0.3	8.3
+Eritrea	232	62.1	0.1	0.2
+Estonia	233	32.7	7.4	50.3
+Falkland Islands (Malvinas)	238			
+Fiji	242	69.8	1.2	28.9
+Finland	246	48.8	20.6	21.5
+France	250	18.8	58.8	20.7
+French Southern Territories	260			
+Djibouti	262	27.5	16.7	55
+Gabon	266	76.3	9.2	13.4
+Georgia	268	18.4	43	38.5
+Gambia	270	8.5	2.1	0
+Germany	276	52.6	28.4	18.9
+Ghana	288	28.3	6.6	8
+Greece	300	31.5	45.5	21.8
+Greenland	304			
+Guatemala	320	56.1	2.1	41.7
+Guinea	324	91.1	8.9	0
+Guyana	328	48.4	0.2	50.8
+Haiti	332	2.3	0.3	97.3
+Honduras	340	46.6	1.2	52.1
+Hungary	348	35.5	32.2	32.3
+Iceland	352	56.5	27.9	15.5
+India	356	7.5	0.1	92.4
+Indonesia	360	18.5	76.4	4.6
+Iran	364			
+Iraq	368	71	2.4	25.7
+Ireland	372	47	28	18.8
+Israel	376	54.4	4.7	39.5
+Italy	380	25.4	64.8	9.8
+Cote d'Ivoire	384	21.9	5	0.2
+Jamaica	388	36.3	4.8	54.2
+Japan	392	18.2	5.5	40
+Kazakhstan	398	30.5	6.5	62.9
+Jordan	400	19.9	2.6	75.9
+Kenya	404	39.8	1.8	21.4
+North Korea	408	2.7	0	97.3
+South Korea	410	22.2	1.9	7.1
+Kuwait	414			
+Kyrgyzstan	417	11.6	2.2	86.2
+Laos	418	50.1	0	49.8
+Lebanon	422	33.9	15.4	49.2
+Lesotho	426	57.4	3.2	10.5
+Latvia	428	42.8	11.1	40
+Liberia	430	9.4	1.8	88.2
+Libya	434			
+Lithuania	440	43.6	7.3	37.1
+Luxembourg	442	35.4	44.6	20
+Madagascar	450	53.8	8.2	38
+Malawi	454	8.8	0.8	11.3
+Malaysia	458	60.7	21	17.4
+Mali	466	15.8	1.2	0
+Mauritania	478			
+Mexico	484	77.1	2.1	20.4
+Mongolia	496	43.6	1.9	54.5
+Moldova	498	16.2	56.6	25.2
+Montenegro	499	10.8	43.1	44.1
+Morocco	504	42.9	39.8	17
+Mozambique	508	78.7	8.3	12.4
+Oman	512	39.8	2.8	57
+Namibia	516	60.2	10.4	13.9
+Nepal	524	31	49	20
+Netherlands	528	47.8	35.8	16.4
+New Caledonia	540			
+Vanuatu	548	38.5	25.4	36.1
+New Zealand	554	37.4	33.4	28.9
+Nicaragua	558	39.7	0.8	59.5
+Niger	562	45	13.7	41.4
+Nigeria	566	7.9	0.4	0.6
+Norway	578	43.9	36.7	16.7
+Pakistan	586			
+Panama	591	76.9	3.5	19.4
+Papua New Guinea	598	95.2	2.7	2.1
+Paraguay	600	54.2	17.4	27.3
+Peru	604	60.1	8.1	31.8
+Philippines	608	27.3	0.4	72
+Poland	616	56.1	7.8	36.1
+Portugal	620	26.1	61.5	7.7
+Guinea-Bissau	624	13.7	31.3	13.7
+Timor	626	67.6	32.4	0
+Puerto Rico	630			
+Qatar	634	25.9	10.2	63.4
+Romania	642	55.6	28.1	16.4
+Russia	643	39	12.8	38.6
+Rwanda	646	14.8	0.2	2.7
+Saudi Arabia	682			
+Senegal	686	56.4	34.1	8.5
+Serbia	688	32	42.5	25.4
+Sierra Leone	694	4	1.1	0
+Slovakia	703	33.7	20.9	41.9
+Vietnam	704	91.5	0.8	7.7
+Slovenia	705	41.4	50.6	8
+Somalia	706			
+South Africa	710	56	18.5	17.8
+Zimbabwe	716	62.8	1.3	12
+Spain	724	54.2	18	27.8
+South Sudan	728			
+Sudan	729			
+Western Sahara	732			
+Suriname	740	44.9	3.5	48.8
+Swaziland	748			
+Sweden	752	36.4	47.8	14.1
+Switzerland	756	32.1	48.1	18.5
+Syria	760	11.6	1.1	87.2
+Tajikistan	762	37.9	0.7	60.9
+Thailand	764	28.3	2.7	68.9
+Togo	768	37	16	18.2
+Trinidad and Tobago	780	57.9	3.3	37.1
+United Arab Emirates	784	10.1	7.7	81.9
+Tunisia	788	72.2	23.9	3.8
+Turkey	792	57.6	8.6	33.8
+Turkmenistan	795	26.8	35.1	38
+Uganda	800	11	0.1	3.1
+Ukraine	804	42.3	5.4	51.5
+North Macedonia	807	35.3	46.6	17.4
+Egypt	818	62	4.4	33.1
+United Kingdom	826	35	35.7	22.5
+Tanzania	834	12.2	0.4	1.6
+United States	840	47	18.1	34.9
+Burkina Faso	854	18	2.7	5
+Uruguay	858	35.2	43.7	21.1
+Uzbekistan	860	34.4	8.6	56.9
+Venezuela	862	69.2	0.3	29.2
+Yemen	887	89.5	0	10.5
+Zambia	894	36.4	2.7	0.4
