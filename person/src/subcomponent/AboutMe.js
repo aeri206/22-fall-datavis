@@ -17,10 +17,9 @@ export function AboutMe() {
     setMe('age', age_)
   }, [age_])
   return (
-    <div className="pt-10 pl-10">
-      <input type="number" id="ambiguous_id"></input>
-      <div className='text-2xl mb-10'>About You {'\n'}</div>
-      <div className='text-left'>
+    <div className="">
+      <div className='text-2xl my-3'>About You</div>
+      <div className='text-left ml-10'>
         <div>Age : {age} years old</div>
         <div className="mx-20">
           <Slider
@@ -49,10 +48,11 @@ export function AboutMe() {
           <FormControlLabel value="male" control={<Radio />} label="Male" />
           <FormControlLabel value="other" control={<Radio />} label="Other" />
         </RadioGroup>
-        <div className='grid grid-rows-2 grid-cols-2 h-full w-full mt-10'>
+        <div className='grid grid-rows-2 grid-cols-2 h-full w-full'>
           <div>
             <div>GDP</div>
             <TextField
+              size="small"
               inputProps={{
                 step: 1000,
               }}
@@ -66,6 +66,7 @@ export function AboutMe() {
           <div>
             <div>Health</div>
             <TextField
+              size="small"
               inputProps={{
                 step: 0.05,
               }}
@@ -79,6 +80,7 @@ export function AboutMe() {
           <div>
             <div>Happiness</div>
             <TextField
+              size="small"
               type="number"
               inputProps={{
                 step: 0.1,
@@ -92,6 +94,7 @@ export function AboutMe() {
           <div>
             <div>Alcohol Consumption</div>
             <TextField
+              size="small"
               inputProps={{
                 step: 5,
               }}

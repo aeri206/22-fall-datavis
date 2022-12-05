@@ -29,8 +29,8 @@ export function LineChart() {
   let spec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Google's stock price over time.",
-    "width": "350",
-    "height": "350",
+    "width": "300",
+    "height": "300",
     
     "repeat": {
       "layer": layerList
@@ -97,8 +97,8 @@ export function LineChart() {
     }
   }
   return (
-    <div className="place-items-center pt-10">
-      <div className="py-10">
+    <div className="place-items-center">
+      <div className="pt-3">
         average <select onChange={e => setSelected(e.target.value)} value={Selected} className='border'>
           {selectList.map((item) => (
             <option value={item} key={item}>

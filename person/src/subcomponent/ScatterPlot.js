@@ -35,7 +35,7 @@ export function ScatterPlot() {
     );
   }, []);
   useEffect(() => { 
-    setWidth(ref.current.offsetWidth * 2 / 3)
+    setWidth(ref.current.offsetWidth)
     setHeight(ref.current.offsetHeight * 2 / 3)
   }, [ref.current])
 
@@ -64,7 +64,7 @@ export function ScatterPlot() {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "Google's stock price over time.",
     "width": width,
-    "height": width,
+    "height": height,
     // "transform": [{"filter": "datum.symbol==='GOOG'"}],
     "layer":[
       {"data": {
@@ -150,8 +150,8 @@ export function ScatterPlot() {
     ],
   }
   return (
-    <div className="place-items-center pt-5 pl-5">
-      <div className="w-2/3 float-left px-10 ">
+    <div className="place-items-center pt-5 pl-3">
+      <div className="w-2/3 float-left px-8">
         <div ref={ref}>
           <VegaLite spec={spec} className='w-full'/>
           <div className="my-1">
@@ -177,7 +177,7 @@ export function ScatterPlot() {
         </div>
       </div>
       <div className="w-1/3 float-left">
-        <div className="my-5">
+        <div className="my-2">
           Top Similar Country
         </div>
 
