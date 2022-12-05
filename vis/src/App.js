@@ -1,6 +1,6 @@
 import './App.css';
 import { Vega } from 'react-vega';
-
+import Scatter from './Scatter.js';
 
 const spec = {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
@@ -136,11 +136,11 @@ const spec = {
 }
 
 
-
 function App() {
   return (
     <div className="App">
       <Vega spec={spec}/>
+      <Scatter />
     </div>
   );
 }
