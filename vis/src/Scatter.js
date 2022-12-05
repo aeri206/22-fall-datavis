@@ -1,94 +1,74 @@
 import { Vega } from 'react-vega';
 
 const spec = {
-  "config": {"view": {"continuousWidth": 500, "continuousHeight": 500}},
-  "data": {"url": "data/scatter/data_final.csv"},
-  "params": [
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A basic scatter plot example depicting automobile statistics.",
+  "width": 400,
+  "height": 400,
+  "padding": 5,
+  "data": [
+    {
+      "name": "source", 
+      "url": "http://localhost:8080/scatter/data_final.tsv",
+      "format": {"type": "tsv", "parse": "auto"},
+    }
+  ],
+  "scales": [
     {
       "name": "x",
-      "value": "happiness score",
-      "bind": {
-        "input": "select",
-        "options": [
-          "COVID cases/100k",
-          "capital city latitude",
-          "GDP real growth rate",
-          "unemployment rate",
-          "gini index",
-          "inflation rate",
-          "median age",
-          "total fertility rate",
-          "life expectancy",
-          "HDI index",
-          "GDP per capita",
-          "happiness score",
-          "corruption index(cpi)",
-          "abstainer(lifetime)",
-          "abstainer(12 month)",
-          "consumer(12 month)",
-          "consumer gender ratio(male/female)",
-          "heavy episodic drinking(30 days)",
-          "alcohol attributable death",
-          "years of life lost by alcohol",
-          "gender gap index",
-          "work hours (unpaid+paid+study)",
-          "alcohol consumption",
-          "alcohol consumption(drinkers only)"
-        ]
-      }
+      "type": "linear",
+      "round": true,
+      "nice": true,
+      "zero": true,
+      "domain": {"data": "source", "field": "happiness"},
+      "range": "width"
     },
     {
       "name": "y",
-      "value": "alcohol consumption",
-      "bind": {
-        "input": "select",
-        "options": [
-          "abstainer(lifetime)",
-          "abstainer(12 month)",
-          "consumer(12 month)",
-          "consumer gender ratio(male/female)",
-          "heavy episodic drinking(30 days)",
-          "alcohol attributable death",
-          "years of life lost by alcohol",
-          "alcohol consumption",
-          "alcohol consumption(drinkers only)"
-        ]
+      "type": "linear",
+      "round": true,
+      "nice": true,
+      "zero": true,
+      "domain": {"data": "source", "field": "consumption"},
+      "range": "height"
+    },
+  ],
+  "axes": [
+    {
+      "scale": "x",
+      "grid": true,
+      "domain": false,
+      "orient": "bottom",
+      "tickCount": 5,
+      "title": "happiness score"
+    },
+    {
+      "scale": "y",
+      "grid": true,
+      "domain": false,
+      "orient": "left",
+      "titlePadding": 5,
+      "title": "alcohol consumption"
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "symbol",
+      "from": {"data": "source"},
+      "encode": {
+        "update": {
+          "x": {"scale": "x", "field": "happiness score"},
+          "y": {"scale": "y", "field": "alcohol consumption"},
+          "shape": {"value": "circle"},
+          "strokeWidth": {"value": 2},
+          "opacity": {"value": 0.5},
+          "stroke": {"value": "#4682b4"},
+          "fill": {"scale": "color", "field":"continent"}
+        }
       }
     }
-  ],
-  "transform": [
-    {"calculate": "datum[x]", "as": "xcalc"},
-    {"calculate": "datum[y]", "as": "ycalc"},
-    {"filter": [
-      {"field": "xcalc", "valid": true},
-      {"field": "ycalc", "valid": true}
-    ]}
-  ],
-  "mark": "point",
-  "encoding": {
-    "color": {
-      "field": "continent",
-      "type": "nominal",
-    },
-    "tooltip": [
-      {"field": "country", "type": "nominal"},
-      {"field": "alcohol consumption", "type": "quantitative"},
-      {"field": "xcalc", "type": "quantitative", "title": "x"},
-      {"field": "ycalc", "type": "quantitative", "title": "y"}
-    ],
-    "x": {
-      "field": "xcalc",
-      "type": "quantitative",
-      "axis": {"title": {"expr": "x"}}
-    },
-    "y": {
-      "field": "ycalc",
-      "type": "quantitative",
-      "axis": {"title": {"expr": "y"}}
-    }
-  }
-}
-
+  ]}
 
 function Scatter() {
     return (
