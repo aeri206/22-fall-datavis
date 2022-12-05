@@ -1,10 +1,9 @@
 
 import { Vega } from 'react-vega';
-import { useEffect, useState, useRef } from 'react';
-import { Select, Grid, Box, Grommet } from 'grommet';
-import { DataTable, Meter, Text } from 'grommet';
+import { useEffect, useState } from 'react';
+import { Select, Grid, Box, Grommet, DataTable, Heading } from 'grommet';
 
-import { data2015, data2018, data2010 } from '../data/data';
+import { data2015, data2018, data2010, code } from '../data/data';
 import Scatter from "./Scatter";
 
 import embed from 'vega-embed';
@@ -134,7 +133,7 @@ export function WorldMap(){
               "feature": "countries"
             },
             "transform": [
-                { "type": "lookup", "from": "code", "key": "id", "fields": ["id"], "values": ["name"], "as": ["country"]},
+                { "type": "lookup", "from": "code", "key": "id", "fields": ["id"], "values": ["name"]},
               { "type": "lookup", "from": "drink", "key": "id", "fields": ["id"], "values": ["wine", "beer", "sprites", "total"] },
             //   { "type": "filter", "expr": "datum.wine != null" }
               
@@ -179,7 +178,7 @@ export function WorldMap(){
             "encode": {
               "enter": {
                 "tooltip": [{
-                  "signal":`{country: datum.country, ${alcoholType}: format(datum[alcoholType], '.2f')}`
+                  "signal":`{country: datum.name, ${alcoholType}: format(datum[alcoholType], '.2f')}`
 
                 //   , \"Country\": format(datum[Country], \"\")
                 //    "format(datum[alcoholType], '.2f')"
@@ -217,18 +216,40 @@ export function WorldMap(){
 
       let pieSpec = {
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-        "description": "A simple pie chart with embedded data.",
         "data": {
             "url": "http://147.46.240.50:4999/alcohol_share.csv",
         },
+        "width": "container",
+        "height": 180,
         
         "mark": {"type": "arc", "tooltip": true},
         
         "encoding": {
             "theta": {"field": "Drinks", "type": "quantitative"},
-    "color": {"field": "Type", "type": "nominal"}
+            "color": {"field": "Type", "type": "nominal"}
         }
       }
+
+      let lineSpec = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "mark": {
+          "type": "line",
+          "point": true
+        },
+        "width": 'container',
+        "height": 150,
+
+        "encoding": {
+          "x": {"field": "year", "type": "ordinal", "axis": {"labelAngle": 0}},
+          "y": {"field": "alcohol consumption per capita", "type": "quantitative"},
+          "color": {"field": "type", "type": "nominal"},
+          "tooltip": [
+            {"field": "type", "type": "nominal"},
+            {"field": "alcohol consumption per capita", "type": "quantitative", "title": "consumption"}
+          ]
+        }
+      }
+      
        
     const handleYearChange = (e) => {
     setYear(e.target.value);
@@ -257,8 +278,38 @@ export function WorldMap(){
                         setCountryID(item.datum.id);
                         pieSpec["transform"] = [
                             {"filter": {"field": "id", "equal": item.datum.id}}
-                        ]   
-                        embed('#pie-chart', pieSpec, {"mode": "vega-lite", "actions": false, "padding": {"top": 30, "right": 0}});
+                        ]
+                        embed('#pie-chart', pieSpec, {"mode": "vega-lite", "actions": false, "padding": {"top": 15, "right": 10, "bottom": 10}});
+                        // TODO ; embed line chart
+                        let lineData = []
+                        if (data2010.find(x => x.id == item.datum.id)) {
+                          let res = data2010.find(x => x.id == item.datum.id);
+                          lineData.push(...[
+                            {country: res.country, year: 2010, 'alcohol consumption per capita': res.beer, type: 'beer'},
+                            {country: res.country, year: 2010, 'alcohol consumption per capita': res.wine, type: 'wine'},
+                            {country: res.country, year: 2010, 'alcohol consumption per capita': res.sprites, type: 'sprites'}
+                          ]);
+                        }
+                        if (data2015.find(x => x.id == item.datum.id)) {
+                          let res = data2015.find(x => x.id == item.datum.id);
+                          lineData.push(...[
+                            {country: res.country, year: 2015, 'alcohol consumption per capita': res.beer, type: 'beer'},
+                            {country: res.country, year: 2015, 'alcohol consumption per capita': res.wine, type: 'wine'},
+                            {country: res.country, year: 2015, 'alcohol consumption per capita': res.sprites, type: 'sprites'}
+                          ]);
+
+                        }
+                        if (data2018.find(x => x.id == item.datum.id)) {
+                          let res = data2018.find(x => x.id == item.datum.id);
+                          lineData.push(...[
+                            {country: res.country, year: 2018, 'alcohol consumption per capita': res.beer, type: 'beer'},
+                            {country: res.country, year: 2018, 'alcohol consumption per capita': res.wine, type: 'wine'},
+                            {country: res.country, year: 2018, 'alcohol consumption per capita': res.sprites, type: 'sprites'}
+                          ]);
+                        };
+                        lineSpec["data"] = {"values": lineData};
+                        embed('#line-chart', lineSpec, {"mode": "vega-lite", "actions": false, "width": 300} );
+                        
                     }
                     
                 }
@@ -271,8 +322,8 @@ export function WorldMap(){
     return(
             <Grid
             gap="1.25rem"
-            margin={{top: 0, bottom: 0, left: 'medium', right: 'medium'}}
-            style={{paddingTop: '24px', paddingBottom: '24px'}}
+            // margin={{top: 0, bottom: 0, left: 'medium', right: 'medium'}}
+            style={{paddingTop: '24px', paddingBottom: '24px', 'margin': '0 24px 0 24px'}}
             rows={['40px', '450px', '700px' ]}
             columns={['630px','320px', '']}
             areas={[
@@ -308,7 +359,13 @@ export function WorldMap(){
     />
     </Box>
     </Box>
-            <Box background="white" round="xsmall" gridArea='pie' id='pie-chart' elevation='medium'></Box>
+            <Box background="white" round="xsmall" gridArea='pie' elevation='medium'>
+            <Heading style={{paddingTop: 10}}margin="none" level={4}>{
+                countryId ? code.find(x => x.id == countryId).name : ''
+            }</Heading>
+              <Box id='pie-chart' />
+              <Box id='line-chart' />
+            </Box>
             <Box gridArea='list' elevation='medium' background="white" round="xsmall">
                 <Grommet theme={{
                     dataTable: {
@@ -335,7 +392,7 @@ export function WorldMap(){
                       }
                 }
                 paginate={true} columns={[
-                    {property: 'Country', header: 'Country'},
+                    {property: 'country', header: 'Country'},
                     
                     {property: 'beer', header: 'Beer'},
                     {property: 'wine', header: 'Wine'},

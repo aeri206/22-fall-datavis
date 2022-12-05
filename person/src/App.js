@@ -2,6 +2,7 @@ import './App.css';
 import { AboutMe } from './subcomponent/AboutMe';
 import { LineChart } from './subcomponent/LineChart';
 import { ScatterPlot } from './subcomponent/ScatterPlot';
+import { Scatter } from './subcomponent/Scatter';
 import { Provider  } from 'react-redux';
 import { applyMiddleware, compose, createStore } from "redux";
 import { configureStore } from '@reduxjs/toolkit'
@@ -23,9 +24,7 @@ function App() {
           <LineChart/>
         </Paper>
         <Paper elevation={3}>
-          <div className="">
-            c
-          </div>
+          <Scatter />
         </Paper>
         <Paper elevation={3}>
           <ScatterPlot/>

@@ -1,0 +1,7 @@
+.vega-bindings {
+    display: flex;
+  }
+
+div.vega-bind > label > select {
+    width: 60%;
+}

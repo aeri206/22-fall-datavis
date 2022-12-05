@@ -37,6 +37,7 @@ const spec = {
       "value": "COVID cases/100k",
       "bind": {
         "input": "select",
+        "name": "X Axis : ", 
         "options": [
            "COVID cases/100k",
             "capital city latitude",
@@ -70,6 +71,7 @@ const spec = {
       "value": "abstainer(lifetime)",
       "bind": {
         "input": "select",
+        "name": "Y Axis : ", 
         "options": [
           "abstainer(lifetime)",
           "abstainer(12 month)",
@@ -125,8 +127,7 @@ const spec = {
 function Scatter() {
     return (
       <div className="Scatter">
-        <h1>Scatter</h1>
-        <VegaLite spec={spec} actions={false}/>
+        <VegaLite spec={spec} actions={false} style={{marginTop: 20}}/>
       </div>
     );
   }

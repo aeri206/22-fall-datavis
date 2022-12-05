@@ -1,520 +1,693 @@
-id,Country,Type,Drinks
-4,Afghanistan,Beer,
-8,Albania,Beer,34.3
-10,Antarctica,Beer,
-12,Algeria,Beer,57.3
-24,Angola,Beer,70.3
-31,Azerbaijan,Beer,61.5
-32,Argentina,Beer,39.9
-36,Australia,Beer,39.9
-40,Austria,Beer,53.5
-44,Bahamas,Beer,39.2
-50,Bangladesh,Beer,
-51,Armenia,Beer,10.6
-56,Belgium,Beer,44.4
-64,Bhutan,Beer,46.2
-68,Bolivia,Beer,72.8
-70,Bosnia and Herzegovina,Beer,75.8
-72,Botswana,Beer,48.1
-76,Brazil,Beer,61.8
-84,Belize,Beer,69.1
-90,Solomon Islands,Beer,93.3
-96,Brunei,Beer,100
-100,Bulgaria,Beer,38.8
-104,Myanmar,Beer,22.4
-108,Burundi,Beer,39.3
-112,Belarus,Beer,22.8
-116,Cambodia,Beer,88.1
-120,Cameroon,Beer,43.5
-124,Canada,Beer,45.1
-140,Central African Republic,Beer,25.9
-144,Sri Lanka,Beer,13.2
-148,Chad,Beer,70.2
-152,Chile,Beer,36.1
-156,China,Beer,29.6
-158,"Taiwan, Province of China",Beer,
-170,Colombia,Beer,71.3
-178,Congo,Beer,84.4
-180,Democratic Republic of Congo,Beer,38.9
-188,Costa Rica,Beer,64.1
-191,Croatia,Beer,44.5
-192,Cuba,Beer,37.3
-196,Cyprus,Beer,29.7
-203,Czechia,Beer,53.3
-204,Benin,Beer,63.7
-208,Denmark,Beer,37.4
-214,Dominican Republic,Beer,52.2
-218,Ecuador,Beer,79.9
-222,El Salvador,Beer,47.8
-226,Equatorial Guinea,Beer,83
-231,Ethiopia,Beer,54.6
-232,Eritrea,Beer,62.1
-233,Estonia,Beer,32.7
-238,Falkland Islands (Malvinas),Beer,
-242,Fiji,Beer,69.8
-246,Finland,Beer,48.8
-250,France,Beer,18.8
-260,French Southern Territories,Beer,
-262,Djibouti,Beer,27.5
-266,Gabon,Beer,76.3
-268,Georgia,Beer,18.4
-270,Gambia,Beer,8.5
-276,Germany,Beer,52.6
-288,Ghana,Beer,28.3
-300,Greece,Beer,31.5
-304,Greenland,Beer,
-320,Guatemala,Beer,56.1
-324,Guinea,Beer,91.1
-328,Guyana,Beer,48.4
-332,Haiti,Beer,2.3
-340,Honduras,Beer,46.6
-348,Hungary,Beer,35.5
-352,Iceland,Beer,56.5
-356,India,Beer,7.5
-360,Indonesia,Beer,18.5
-364,Iran,Beer,
-368,Iraq,Beer,71
-372,Ireland,Beer,47
-376,Israel,Beer,54.4
-380,Italy,Beer,25.4
-384,Cote d'Ivoire,Beer,21.9
-388,Jamaica,Beer,36.3
-392,Japan,Beer,18.2
-398,Kazakhstan,Beer,30.5
-400,Jordan,Beer,19.9
-404,Kenya,Beer,39.8
-408,North Korea,Beer,2.7
-410,South Korea,Beer,22.2
-414,Kuwait,Beer,
-417,Kyrgyzstan,Beer,11.6
-418,Laos,Beer,50.1
-422,Lebanon,Beer,33.9
-426,Lesotho,Beer,57.4
-428,Latvia,Beer,42.8
-430,Liberia,Beer,9.4
-434,Libya,Beer,
-440,Lithuania,Beer,43.6
-442,Luxembourg,Beer,35.4
-450,Madagascar,Beer,53.8
-454,Malawi,Beer,8.8
-458,Malaysia,Beer,60.7
-466,Mali,Beer,15.8
-478,Mauritania,Beer,
-484,Mexico,Beer,77.1
-496,Mongolia,Beer,43.6
-498,Moldova,Beer,16.2
-499,Montenegro,Beer,10.8
-504,Morocco,Beer,42.9
-508,Mozambique,Beer,78.7
-512,Oman,Beer,39.8
-516,Namibia,Beer,60.2
-524,Nepal,Beer,31
-528,Netherlands,Beer,47.8
-540,New Caledonia,Beer,
-548,Vanuatu,Beer,38.5
-554,New Zealand,Beer,37.4
-558,Nicaragua,Beer,39.7
-562,Niger,Beer,45
-566,Nigeria,Beer,7.9
-578,Norway,Beer,43.9
-586,Pakistan,Beer,
-591,Panama,Beer,76.9
-598,Papua New Guinea,Beer,95.2
-600,Paraguay,Beer,54.2
-604,Peru,Beer,60.1
-608,Philippines,Beer,27.3
-616,Poland,Beer,56.1
-620,Portugal,Beer,26.1
-624,Guinea-Bissau,Beer,13.7
-626,Timor,Beer,67.6
-630,Puerto Rico,Beer,
-634,Qatar,Beer,25.9
-642,Romania,Beer,55.6
-643,Russia,Beer,39
-646,Rwanda,Beer,14.8
-682,Saudi Arabia,Beer,
-686,Senegal,Beer,56.4
-688,Serbia,Beer,32
-694,Sierra Leone,Beer,4
-703,Slovakia,Beer,33.7
-704,Vietnam,Beer,91.5
-705,Slovenia,Beer,41.4
-706,Somalia,Beer,
-710,South Africa,Beer,56
-716,Zimbabwe,Beer,62.8
-724,Spain,Beer,54.2
-728,South Sudan,Beer,
-729,Sudan,Beer,
-732,Western Sahara,Beer,
-740,Suriname,Beer,44.9
-748,Swaziland,Beer,
-752,Sweden,Beer,36.4
-756,Switzerland,Beer,32.1
-760,Syria,Beer,11.6
-762,Tajikistan,Beer,37.9
-764,Thailand,Beer,28.3
-768,Togo,Beer,37
-780,Trinidad and Tobago,Beer,57.9
-784,United Arab Emirates,Beer,10.1
-788,Tunisia,Beer,72.2
-792,Turkey,Beer,57.6
-795,Turkmenistan,Beer,26.8
-800,Uganda,Beer,11
-804,Ukraine,Beer,42.3
-807,North Macedonia,Beer,35.3
-818,Egypt,Beer,62
-826,United Kingdom,Beer,35
-834,Tanzania,Beer,12.2
-840,United States,Beer,47
-854,Burkina Faso,Beer,18
-858,Uruguay,Beer,35.2
-860,Uzbekistan,Beer,34.4
-862,Venezuela,Beer,69.2
-887,Yemen,Beer,89.5
-894,Zambia,Beer,36.4
-4,Afghanistan,Wine,
-8,Albania,Wine,26.5
-10,Antarctica,Wine,
-12,Algeria,Wine,24.4
-24,Angola,Wine,17.6
-31,Azerbaijan,Wine,36.9
-32,Argentina,Wine,40.2
-36,Australia,Wine,37.5
-40,Austria,Wine,31.6
-44,Bahamas,Wine,16.6
-50,Bangladesh,Wine,
-51,Armenia,Wine,7
-56,Belgium,Wine,38.3
-64,Bhutan,Wine,4.2
-68,Bolivia,Wine,4.3
-70,Bosnia and Herzegovina,Wine,8.6
-72,Botswana,Wine,23.5
-76,Brazil,Wine,3.4
-84,Belize,Wine,1.9
-90,Solomon Islands,Wine,2.9
-96,Brunei,Wine,0
-100,Bulgaria,Wine,17.2
-104,Myanmar,Wine,9.8
-108,Burundi,Wine,0.1
-112,Belarus,Wine,2.2
-116,Cambodia,Wine,0.6
-120,Cameroon,Wine,1.4
-124,Canada,Wine,25.6
-140,Central African Republic,Wine,0.7
-144,Sri Lanka,Wine,0.3
-148,Chad,Wine,1
-152,Chile,Wine,33.1
-156,China,Wine,3.1
-158,"Taiwan, Province of China",Wine,
-170,Colombia,Wine,1.1
-178,Congo,Wine,4.7
-180,Democratic Republic of Congo,Wine,0.6
-188,Costa Rica,Wine,7.2
-191,Croatia,Wine,39
-192,Cuba,Wine,4.9
-196,Cyprus,Wine,28.4
-203,Czechia,Wine,21.3
-204,Benin,Wine,9.6
-208,Denmark,Wine,44.7
-214,Dominican Republic,Wine,4.4
-218,Ecuador,Wine,1.5
-222,El Salvador,Wine,1.3
-226,Equatorial Guinea,Wine,17
-231,Ethiopia,Wine,0.3
-232,Eritrea,Wine,0.1
-233,Estonia,Wine,7.4
-238,Falkland Islands (Malvinas),Wine,
-242,Fiji,Wine,1.2
-246,Finland,Wine,20.6
-250,France,Wine,58.8
-260,French Southern Territories,Wine,
-262,Djibouti,Wine,16.7
-266,Gabon,Wine,9.2
-268,Georgia,Wine,43
-270,Gambia,Wine,2.1
-276,Germany,Wine,28.4
-288,Ghana,Wine,6.6
-300,Greece,Wine,45.5
-304,Greenland,Wine,
-320,Guatemala,Wine,2.1
-324,Guinea,Wine,8.9
-328,Guyana,Wine,0.2
-332,Haiti,Wine,0.3
-340,Honduras,Wine,1.2
-348,Hungary,Wine,32.2
-352,Iceland,Wine,27.9
-356,India,Wine,0.1
-360,Indonesia,Wine,76.4
-364,Iran,Wine,
-368,Iraq,Wine,2.4
-372,Ireland,Wine,28
-376,Israel,Wine,4.7
-380,Italy,Wine,64.8
-384,Cote d'Ivoire,Wine,5
-388,Jamaica,Wine,4.8
-392,Japan,Wine,5.5
-398,Kazakhstan,Wine,6.5
-400,Jordan,Wine,2.6
-404,Kenya,Wine,1.8
-408,North Korea,Wine,0
-410,South Korea,Wine,1.9
-414,Kuwait,Wine,
-417,Kyrgyzstan,Wine,2.2
-418,Laos,Wine,0
-422,Lebanon,Wine,15.4
-426,Lesotho,Wine,3.2
-428,Latvia,Wine,11.1
-430,Liberia,Wine,1.8
-434,Libya,Wine,
-440,Lithuania,Wine,7.3
-442,Luxembourg,Wine,44.6
-450,Madagascar,Wine,8.2
-454,Malawi,Wine,0.8
-458,Malaysia,Wine,21
-466,Mali,Wine,1.2
-478,Mauritania,Wine,
-484,Mexico,Wine,2.1
-496,Mongolia,Wine,1.9
-498,Moldova,Wine,56.6
-499,Montenegro,Wine,43.1
-504,Morocco,Wine,39.8
-508,Mozambique,Wine,8.3
-512,Oman,Wine,2.8
-516,Namibia,Wine,10.4
-524,Nepal,Wine,49
-528,Netherlands,Wine,35.8
-540,New Caledonia,Wine,
-548,Vanuatu,Wine,25.4
-554,New Zealand,Wine,33.4
-558,Nicaragua,Wine,0.8
-562,Niger,Wine,13.7
-566,Nigeria,Wine,0.4
-578,Norway,Wine,36.7
-586,Pakistan,Wine,
-591,Panama,Wine,3.5
-598,Papua New Guinea,Wine,2.7
-600,Paraguay,Wine,17.4
-604,Peru,Wine,8.1
-608,Philippines,Wine,0.4
-616,Poland,Wine,7.8
-620,Portugal,Wine,61.5
-624,Guinea-Bissau,Wine,31.3
-626,Timor,Wine,32.4
-630,Puerto Rico,Wine,
-634,Qatar,Wine,10.2
-642,Romania,Wine,28.1
-643,Russia,Wine,12.8
-646,Rwanda,Wine,0.2
-682,Saudi Arabia,Wine,
-686,Senegal,Wine,34.1
-688,Serbia,Wine,42.5
-694,Sierra Leone,Wine,1.1
-703,Slovakia,Wine,20.9
-704,Vietnam,Wine,0.8
-705,Slovenia,Wine,50.6
-706,Somalia,Wine,
-710,South Africa,Wine,18.5
-716,Zimbabwe,Wine,1.3
-724,Spain,Wine,18
-728,South Sudan,Wine,
-729,Sudan,Wine,
-732,Western Sahara,Wine,
-740,Suriname,Wine,3.5
-748,Swaziland,Wine,
-752,Sweden,Wine,47.8
-756,Switzerland,Wine,48.1
-760,Syria,Wine,1.1
-762,Tajikistan,Wine,0.7
-764,Thailand,Wine,2.7
-768,Togo,Wine,16
-780,Trinidad and Tobago,Wine,3.3
-784,United Arab Emirates,Wine,7.7
-788,Tunisia,Wine,23.9
-792,Turkey,Wine,8.6
-795,Turkmenistan,Wine,35.1
-800,Uganda,Wine,0.1
-804,Ukraine,Wine,5.4
-807,North Macedonia,Wine,46.6
-818,Egypt,Wine,4.4
-826,United Kingdom,Wine,35.7
-834,Tanzania,Wine,0.4
-840,United States,Wine,18.1
-854,Burkina Faso,Wine,2.7
-858,Uruguay,Wine,43.7
-860,Uzbekistan,Wine,8.6
-862,Venezuela,Wine,0.3
-887,Yemen,Wine,0
-894,Zambia,Wine,2.7
-4,Afghanistan,Sprites,
-8,Albania,Sprites,37.6
-10,Antarctica,Sprites,
-12,Algeria,Sprites,18.3
-24,Angola,Sprites,11.3
-31,Azerbaijan,Sprites,0
-32,Argentina,Sprites,9.6
-36,Australia,Sprites,12.9
-40,Austria,Sprites,14.9
-44,Bahamas,Sprites,41.2
-50,Bangladesh,Sprites,
-51,Armenia,Sprites,82.3
-56,Belgium,Sprites,14.2
-64,Bhutan,Sprites,49.6
-68,Bolivia,Sprites,21.3
-70,Bosnia and Herzegovina,Sprites,12.4
-72,Botswana,Sprites,4.4
-76,Brazil,Sprites,34.3
-84,Belize,Sprites,26.7
-90,Solomon Islands,Sprites,3.3
-96,Brunei,Sprites,0
-100,Bulgaria,Sprites,42.9
-104,Myanmar,Sprites,67.7
-108,Burundi,Sprites,0.1
-112,Belarus,Sprites,49
-116,Cambodia,Sprites,11.2
-120,Cameroon,Sprites,0.1
-124,Canada,Sprites,25.6
-140,Central African Republic,Sprites,0
-144,Sri Lanka,Sprites,84.9
-148,Chad,Sprites,5.3
-152,Chile,Sprites,30.8
-156,China,Sprites,67.2
-158,"Taiwan, Province of China",Sprites,
-170,Colombia,Sprites,27.2
-178,Congo,Sprites,10.3
-180,Democratic Republic of Congo,Sprites,0.7
-188,Costa Rica,Sprites,27.9
-191,Croatia,Sprites,13
-192,Cuba,Sprites,57.4
-196,Cyprus,Sprites,41.9
-203,Czechia,Sprites,25.4
-204,Benin,Sprites,13.1
-208,Denmark,Sprites,17.1
-214,Dominican Republic,Sprites,41.9
-218,Ecuador,Sprites,17.8
-222,El Salvador,Sprites,50.7
-226,Equatorial Guinea,Sprites,0
-231,Ethiopia,Sprites,8.3
-232,Eritrea,Sprites,0.2
-233,Estonia,Sprites,50.3
-238,Falkland Islands (Malvinas),Sprites,
-242,Fiji,Sprites,28.9
-246,Finland,Sprites,21.5
-250,France,Sprites,20.7
-260,French Southern Territories,Sprites,
-262,Djibouti,Sprites,55
-266,Gabon,Sprites,13.4
-268,Georgia,Sprites,38.5
-270,Gambia,Sprites,0
-276,Germany,Sprites,18.9
-288,Ghana,Sprites,8
-300,Greece,Sprites,21.8
-304,Greenland,Sprites,
-320,Guatemala,Sprites,41.7
-324,Guinea,Sprites,0
-328,Guyana,Sprites,50.8
-332,Haiti,Sprites,97.3
-340,Honduras,Sprites,52.1
-348,Hungary,Sprites,32.3
-352,Iceland,Sprites,15.5
-356,India,Sprites,92.4
-360,Indonesia,Sprites,4.6
-364,Iran,Sprites,
-368,Iraq,Sprites,25.7
-372,Ireland,Sprites,18.8
-376,Israel,Sprites,39.5
-380,Italy,Sprites,9.8
-384,Cote d'Ivoire,Sprites,0.2
-388,Jamaica,Sprites,54.2
-392,Japan,Sprites,40
-398,Kazakhstan,Sprites,62.9
-400,Jordan,Sprites,75.9
-404,Kenya,Sprites,21.4
-408,North Korea,Sprites,97.3
-410,South Korea,Sprites,7.1
-414,Kuwait,Sprites,
-417,Kyrgyzstan,Sprites,86.2
-418,Laos,Sprites,49.8
-422,Lebanon,Sprites,49.2
-426,Lesotho,Sprites,10.5
-428,Latvia,Sprites,40
-430,Liberia,Sprites,88.2
-434,Libya,Sprites,
-440,Lithuania,Sprites,37.1
-442,Luxembourg,Sprites,20
-450,Madagascar,Sprites,38
-454,Malawi,Sprites,11.3
-458,Malaysia,Sprites,17.4
-466,Mali,Sprites,0
-478,Mauritania,Sprites,
-484,Mexico,Sprites,20.4
-496,Mongolia,Sprites,54.5
-498,Moldova,Sprites,25.2
-499,Montenegro,Sprites,44.1
-504,Morocco,Sprites,17
-508,Mozambique,Sprites,12.4
-512,Oman,Sprites,57
-516,Namibia,Sprites,13.9
-524,Nepal,Sprites,20
-528,Netherlands,Sprites,16.4
-540,New Caledonia,Sprites,
-548,Vanuatu,Sprites,36.1
-554,New Zealand,Sprites,28.9
-558,Nicaragua,Sprites,59.5
-562,Niger,Sprites,41.4
-566,Nigeria,Sprites,0.6
-578,Norway,Sprites,16.7
-586,Pakistan,Sprites,
-591,Panama,Sprites,19.4
-598,Papua New Guinea,Sprites,2.1
-600,Paraguay,Sprites,27.3
-604,Peru,Sprites,31.8
-608,Philippines,Sprites,72
-616,Poland,Sprites,36.1
-620,Portugal,Sprites,7.7
-624,Guinea-Bissau,Sprites,13.7
-626,Timor,Sprites,0
-630,Puerto Rico,Sprites,
-634,Qatar,Sprites,63.4
-642,Romania,Sprites,16.4
-643,Russia,Sprites,38.6
-646,Rwanda,Sprites,2.7
-682,Saudi Arabia,Sprites,
-686,Senegal,Sprites,8.5
-688,Serbia,Sprites,25.4
-694,Sierra Leone,Sprites,0
-703,Slovakia,Sprites,41.9
-704,Vietnam,Sprites,7.7
-705,Slovenia,Sprites,8
-706,Somalia,Sprites,
-710,South Africa,Sprites,17.8
-716,Zimbabwe,Sprites,12
-724,Spain,Sprites,27.8
-728,South Sudan,Sprites,
-729,Sudan,Sprites,
-732,Western Sahara,Sprites,
-740,Suriname,Sprites,48.8
-748,Swaziland,Sprites,
-752,Sweden,Sprites,14.1
-756,Switzerland,Sprites,18.5
-760,Syria,Sprites,87.2
-762,Tajikistan,Sprites,60.9
-764,Thailand,Sprites,68.9
-768,Togo,Sprites,18.2
-780,Trinidad and Tobago,Sprites,37.1
-784,United Arab Emirates,Sprites,81.9
-788,Tunisia,Sprites,3.8
-792,Turkey,Sprites,33.8
-795,Turkmenistan,Sprites,38
-800,Uganda,Sprites,3.1
-804,Ukraine,Sprites,51.5
-807,North Macedonia,Sprites,17.4
-818,Egypt,Sprites,33.1
-826,United Kingdom,Sprites,22.5
-834,Tanzania,Sprites,1.6
-840,United States,Sprites,34.9
-854,Burkina Faso,Sprites,5
-858,Uruguay,Sprites,21.1
-860,Uzbekistan,Sprites,56.9
-862,Venezuela,Sprites,29.2
-887,Yemen,Sprites,10.5
-894,Zambia,Sprites,0.4
+Country,id,Type,Drinks
+Afghanistan,4,Beer,
+Albania,8,Beer,34.3
+Antarctica,10,Beer,
+Algeria,12,Beer,57.3
+Angola,24,Beer,70.3
+Azerbaijan,31,Beer,61.5
+Argentina,32,Beer,39.9
+Australia,36,Beer,39.9
+Austria,40,Beer,53.5
+Bahamas,44,Beer,39.2
+Bangladesh,50,Beer,
+Armenia,51,Beer,10.6
+Belgium,56,Beer,44.4
+Bhutan,64,Beer,46.2
+Bolivia,68,Beer,72.8
+Bosnia and Herzegovina,70,Beer,75.8
+Botswana,72,Beer,48.1
+Brazil,76,Beer,61.8
+Belize,84,Beer,69.1
+Solomon Islands,90,Beer,93.3
+Brunei,96,Beer,100
+Bulgaria,100,Beer,38.8
+Myanmar,104,Beer,22.4
+Burundi,108,Beer,39.3
+Belarus,112,Beer,22.8
+Cambodia,116,Beer,88.1
+Cameroon,120,Beer,43.5
+Canada,124,Beer,45.1
+Central African Republic,140,Beer,25.9
+Sri Lanka,144,Beer,13.2
+Chad,148,Beer,70.2
+Chile,152,Beer,36.1
+China,156,Beer,29.6
+"Taiwan, Province of China",158,Beer,
+Colombia,170,Beer,71.3
+Congo,178,Beer,84.4
+Democratic Republic of Congo,180,Beer,38.9
+Costa Rica,188,Beer,64.1
+Croatia,191,Beer,44.5
+Cuba,192,Beer,37.3
+Cyprus,196,Beer,29.7
+Czechia,203,Beer,53.3
+Benin,204,Beer,63.7
+Denmark,208,Beer,37.4
+Dominican Republic,214,Beer,52.2
+Ecuador,218,Beer,79.9
+El Salvador,222,Beer,47.8
+Equatorial Guinea,226,Beer,83
+Ethiopia,231,Beer,54.6
+Eritrea,232,Beer,62.1
+Estonia,233,Beer,32.7
+Falkland Islands (Malvinas),238,Beer,
+Fiji,242,Beer,69.8
+Finland,246,Beer,48.8
+France,250,Beer,18.8
+French Southern Territories,260,Beer,
+Djibouti,262,Beer,27.5
+Gabon,266,Beer,76.3
+Georgia,268,Beer,18.4
+Gambia,270,Beer,8.5
+Germany,276,Beer,52.6
+Ghana,288,Beer,28.3
+Greece,300,Beer,31.5
+Greenland,304,Beer,
+Guatemala,320,Beer,56.1
+Guinea,324,Beer,91.1
+Guyana,328,Beer,48.4
+Haiti,332,Beer,2.3
+Honduras,340,Beer,46.6
+Hungary,348,Beer,35.5
+Iceland,352,Beer,56.5
+India,356,Beer,7.5
+Indonesia,360,Beer,18.5
+Iran,364,Beer,
+Iraq,368,Beer,71
+Ireland,372,Beer,47
+Israel,376,Beer,54.4
+Italy,380,Beer,25.4
+Cote d'Ivoire,384,Beer,21.9
+Jamaica,388,Beer,36.3
+Japan,392,Beer,18.2
+Kazakhstan,398,Beer,30.5
+Jordan,400,Beer,19.9
+Kenya,404,Beer,39.8
+North Korea,408,Beer,2.7
+South Korea,410,Beer,22.2
+Kuwait,414,Beer,
+Kyrgyzstan,417,Beer,11.6
+Laos,418,Beer,50.1
+Lebanon,422,Beer,33.9
+Lesotho,426,Beer,57.4
+Latvia,428,Beer,42.8
+Liberia,430,Beer,9.4
+Libya,434,Beer,
+Lithuania,440,Beer,43.6
+Luxembourg,442,Beer,35.4
+Madagascar,450,Beer,53.8
+Malawi,454,Beer,8.8
+Malaysia,458,Beer,60.7
+Mali,466,Beer,15.8
+Mauritania,478,Beer,
+Mexico,484,Beer,77.1
+Mongolia,496,Beer,43.6
+Moldova,498,Beer,16.2
+Montenegro,499,Beer,10.8
+Morocco,504,Beer,42.9
+Mozambique,508,Beer,78.7
+Oman,512,Beer,39.8
+Namibia,516,Beer,60.2
+Nepal,524,Beer,31
+Netherlands,528,Beer,47.8
+New Caledonia,540,Beer,
+Vanuatu,548,Beer,38.5
+New Zealand,554,Beer,37.4
+Nicaragua,558,Beer,39.7
+Niger,562,Beer,45
+Nigeria,566,Beer,7.9
+Norway,578,Beer,43.9
+Pakistan,586,Beer,
+Panama,591,Beer,76.9
+Papua New Guinea,598,Beer,95.2
+Paraguay,600,Beer,54.2
+Peru,604,Beer,60.1
+Philippines,608,Beer,27.3
+Poland,616,Beer,56.1
+Portugal,620,Beer,26.1
+Guinea-Bissau,624,Beer,13.7
+Timor,626,Beer,67.6
+Puerto Rico,630,Beer,
+Qatar,634,Beer,25.9
+Romania,642,Beer,55.6
+Russia,643,Beer,39
+Rwanda,646,Beer,14.8
+Saudi Arabia,682,Beer,
+Senegal,686,Beer,56.4
+Serbia,688,Beer,32
+Sierra Leone,694,Beer,4
+Slovakia,703,Beer,33.7
+Vietnam,704,Beer,91.5
+Slovenia,705,Beer,41.4
+Somalia,706,Beer,
+South Africa,710,Beer,56
+Zimbabwe,716,Beer,62.8
+Spain,724,Beer,54.2
+South Sudan,728,Beer,
+Sudan,729,Beer,
+Western Sahara,732,Beer,
+Suriname,740,Beer,44.9
+Swaziland,748,Beer,
+Sweden,752,Beer,36.4
+Switzerland,756,Beer,32.1
+Syria,760,Beer,11.6
+Tajikistan,762,Beer,37.9
+Thailand,764,Beer,28.3
+Togo,768,Beer,37
+Trinidad and Tobago,780,Beer,57.9
+United Arab Emirates,784,Beer,10.1
+Tunisia,788,Beer,72.2
+Turkey,792,Beer,57.6
+Turkmenistan,795,Beer,26.8
+Uganda,800,Beer,11
+Ukraine,804,Beer,42.3
+North Macedonia,807,Beer,35.3
+Egypt,818,Beer,62
+United Kingdom,826,Beer,35
+Tanzania,834,Beer,12.2
+United States,840,Beer,47
+Burkina Faso,854,Beer,18
+Uruguay,858,Beer,35.2
+Uzbekistan,860,Beer,34.4
+Venezuela,862,Beer,69.2
+Yemen,887,Beer,89.5
+Zambia,894,Beer,36.4
+Afghanistan,4,Wine,
+Albania,8,Wine,26.5
+Antarctica,10,Wine,
+Algeria,12,Wine,24.4
+Angola,24,Wine,17.6
+Azerbaijan,31,Wine,36.9
+Argentina,32,Wine,40.2
+Australia,36,Wine,37.5
+Austria,40,Wine,31.6
+Bahamas,44,Wine,16.6
+Bangladesh,50,Wine,
+Armenia,51,Wine,7
+Belgium,56,Wine,38.3
+Bhutan,64,Wine,4.2
+Bolivia,68,Wine,4.3
+Bosnia and Herzegovina,70,Wine,8.6
+Botswana,72,Wine,23.5
+Brazil,76,Wine,3.4
+Belize,84,Wine,1.9
+Solomon Islands,90,Wine,2.9
+Brunei,96,Wine,0
+Bulgaria,100,Wine,17.2
+Myanmar,104,Wine,9.8
+Burundi,108,Wine,0.1
+Belarus,112,Wine,2.2
+Cambodia,116,Wine,0.6
+Cameroon,120,Wine,1.4
+Canada,124,Wine,25.6
+Central African Republic,140,Wine,0.7
+Sri Lanka,144,Wine,0.3
+Chad,148,Wine,1
+Chile,152,Wine,33.1
+China,156,Wine,3.1
+"Taiwan, Province of China",158,Wine,
+Colombia,170,Wine,1.1
+Congo,178,Wine,4.7
+Democratic Republic of Congo,180,Wine,0.6
+Costa Rica,188,Wine,7.2
+Croatia,191,Wine,39
+Cuba,192,Wine,4.9
+Cyprus,196,Wine,28.4
+Czechia,203,Wine,21.3
+Benin,204,Wine,9.6
+Denmark,208,Wine,44.7
+Dominican Republic,214,Wine,4.4
+Ecuador,218,Wine,1.5
+El Salvador,222,Wine,1.3
+Equatorial Guinea,226,Wine,17
+Ethiopia,231,Wine,0.3
+Eritrea,232,Wine,0.1
+Estonia,233,Wine,7.4
+Falkland Islands (Malvinas),238,Wine,
+Fiji,242,Wine,1.2
+Finland,246,Wine,20.6
+France,250,Wine,58.8
+French Southern Territories,260,Wine,
+Djibouti,262,Wine,16.7
+Gabon,266,Wine,9.2
+Georgia,268,Wine,43
+Gambia,270,Wine,2.1
+Germany,276,Wine,28.4
+Ghana,288,Wine,6.6
+Greece,300,Wine,45.5
+Greenland,304,Wine,
+Guatemala,320,Wine,2.1
+Guinea,324,Wine,8.9
+Guyana,328,Wine,0.2
+Haiti,332,Wine,0.3
+Honduras,340,Wine,1.2
+Hungary,348,Wine,32.2
+Iceland,352,Wine,27.9
+India,356,Wine,0.1
+Indonesia,360,Wine,76.4
+Iran,364,Wine,
+Iraq,368,Wine,2.4
+Ireland,372,Wine,28
+Israel,376,Wine,4.7
+Italy,380,Wine,64.8
+Cote d'Ivoire,384,Wine,5
+Jamaica,388,Wine,4.8
+Japan,392,Wine,5.5
+Kazakhstan,398,Wine,6.5
+Jordan,400,Wine,2.6
+Kenya,404,Wine,1.8
+North Korea,408,Wine,0
+South Korea,410,Wine,1.9
+Kuwait,414,Wine,
+Kyrgyzstan,417,Wine,2.2
+Laos,418,Wine,0
+Lebanon,422,Wine,15.4
+Lesotho,426,Wine,3.2
+Latvia,428,Wine,11.1
+Liberia,430,Wine,1.8
+Libya,434,Wine,
+Lithuania,440,Wine,7.3
+Luxembourg,442,Wine,44.6
+Madagascar,450,Wine,8.2
+Malawi,454,Wine,0.8
+Malaysia,458,Wine,21
+Mali,466,Wine,1.2
+Mauritania,478,Wine,
+Mexico,484,Wine,2.1
+Mongolia,496,Wine,1.9
+Moldova,498,Wine,56.6
+Montenegro,499,Wine,43.1
+Morocco,504,Wine,39.8
+Mozambique,508,Wine,8.3
+Oman,512,Wine,2.8
+Namibia,516,Wine,10.4
+Nepal,524,Wine,49
+Netherlands,528,Wine,35.8
+New Caledonia,540,Wine,
+Vanuatu,548,Wine,25.4
+New Zealand,554,Wine,33.4
+Nicaragua,558,Wine,0.8
+Niger,562,Wine,13.7
+Nigeria,566,Wine,0.4
+Norway,578,Wine,36.7
+Pakistan,586,Wine,
+Panama,591,Wine,3.5
+Papua New Guinea,598,Wine,2.7
+Paraguay,600,Wine,17.4
+Peru,604,Wine,8.1
+Philippines,608,Wine,0.4
+Poland,616,Wine,7.8
+Portugal,620,Wine,61.5
+Guinea-Bissau,624,Wine,31.3
+Timor,626,Wine,32.4
+Puerto Rico,630,Wine,
+Qatar,634,Wine,10.2
+Romania,642,Wine,28.1
+Russia,643,Wine,12.8
+Rwanda,646,Wine,0.2
+Saudi Arabia,682,Wine,
+Senegal,686,Wine,34.1
+Serbia,688,Wine,42.5
+Sierra Leone,694,Wine,1.1
+Slovakia,703,Wine,20.9
+Vietnam,704,Wine,0.8
+Slovenia,705,Wine,50.6
+Somalia,706,Wine,
+South Africa,710,Wine,18.5
+Zimbabwe,716,Wine,1.3
+Spain,724,Wine,18
+South Sudan,728,Wine,
+Sudan,729,Wine,
+Western Sahara,732,Wine,
+Suriname,740,Wine,3.5
+Swaziland,748,Wine,
+Sweden,752,Wine,47.8
+Switzerland,756,Wine,48.1
+Syria,760,Wine,1.1
+Tajikistan,762,Wine,0.7
+Thailand,764,Wine,2.7
+Togo,768,Wine,16
+Trinidad and Tobago,780,Wine,3.3
+United Arab Emirates,784,Wine,7.7
+Tunisia,788,Wine,23.9
+Turkey,792,Wine,8.6
+Turkmenistan,795,Wine,35.1
+Uganda,800,Wine,0.1
+Ukraine,804,Wine,5.4
+North Macedonia,807,Wine,46.6
+Egypt,818,Wine,4.4
+United Kingdom,826,Wine,35.7
+Tanzania,834,Wine,0.4
+United States,840,Wine,18.1
+Burkina Faso,854,Wine,2.7
+Uruguay,858,Wine,43.7
+Uzbekistan,860,Wine,8.6
+Venezuela,862,Wine,0.3
+Yemen,887,Wine,0
+Zambia,894,Wine,2.7
+Afghanistan,4,Sprites,
+Albania,8,Sprites,37.6
+Antarctica,10,Sprites,
+Algeria,12,Sprites,18.3
+Angola,24,Sprites,11.3
+Azerbaijan,31,Sprites,0
+Argentina,32,Sprites,9.6
+Australia,36,Sprites,12.9
+Austria,40,Sprites,14.9
+Bahamas,44,Sprites,41.2
+Bangladesh,50,Sprites,
+Armenia,51,Sprites,82.3
+Belgium,56,Sprites,14.2
+Bhutan,64,Sprites,49.6
+Bolivia,68,Sprites,21.3
+Bosnia and Herzegovina,70,Sprites,12.4
+Botswana,72,Sprites,4.4
+Brazil,76,Sprites,34.3
+Belize,84,Sprites,26.7
+Solomon Islands,90,Sprites,3.3
+Brunei,96,Sprites,0
+Bulgaria,100,Sprites,42.9
+Myanmar,104,Sprites,67.7
+Burundi,108,Sprites,0.1
+Belarus,112,Sprites,49
+Cambodia,116,Sprites,11.2
+Cameroon,120,Sprites,0.1
+Canada,124,Sprites,25.6
+Central African Republic,140,Sprites,0
+Sri Lanka,144,Sprites,84.9
+Chad,148,Sprites,5.3
+Chile,152,Sprites,30.8
+China,156,Sprites,67.2
+"Taiwan, Province of China",158,Sprites,
+Colombia,170,Sprites,27.2
+Congo,178,Sprites,10.3
+Democratic Republic of Congo,180,Sprites,0.7
+Costa Rica,188,Sprites,27.9
+Croatia,191,Sprites,13
+Cuba,192,Sprites,57.4
+Cyprus,196,Sprites,41.9
+Czechia,203,Sprites,25.4
+Benin,204,Sprites,13.1
+Denmark,208,Sprites,17.1
+Dominican Republic,214,Sprites,41.9
+Ecuador,218,Sprites,17.8
+El Salvador,222,Sprites,50.7
+Equatorial Guinea,226,Sprites,0
+Ethiopia,231,Sprites,8.3
+Eritrea,232,Sprites,0.2
+Estonia,233,Sprites,50.3
+Falkland Islands (Malvinas),238,Sprites,
+Fiji,242,Sprites,28.9
+Finland,246,Sprites,21.5
+France,250,Sprites,20.7
+French Southern Territories,260,Sprites,
+Djibouti,262,Sprites,55
+Gabon,266,Sprites,13.4
+Georgia,268,Sprites,38.5
+Gambia,270,Sprites,0
+Germany,276,Sprites,18.9
+Ghana,288,Sprites,8
+Greece,300,Sprites,21.8
+Greenland,304,Sprites,
+Guatemala,320,Sprites,41.7
+Guinea,324,Sprites,0
+Guyana,328,Sprites,50.8
+Haiti,332,Sprites,97.3
+Honduras,340,Sprites,52.1
+Hungary,348,Sprites,32.3
+Iceland,352,Sprites,15.5
+India,356,Sprites,92.4
+Indonesia,360,Sprites,4.6
+Iran,364,Sprites,
+Iraq,368,Sprites,25.7
+Ireland,372,Sprites,18.8
+Israel,376,Sprites,39.5
+Italy,380,Sprites,9.8
+Cote d'Ivoire,384,Sprites,0.2
+Jamaica,388,Sprites,54.2
+Japan,392,Sprites,40
+Kazakhstan,398,Sprites,62.9
+Jordan,400,Sprites,75.9
+Kenya,404,Sprites,21.4
+North Korea,408,Sprites,97.3
+South Korea,410,Sprites,7.1
+Kuwait,414,Sprites,
+Kyrgyzstan,417,Sprites,86.2
+Laos,418,Sprites,49.8
+Lebanon,422,Sprites,49.2
+Lesotho,426,Sprites,10.5
+Latvia,428,Sprites,40
+Liberia,430,Sprites,88.2
+Libya,434,Sprites,
+Lithuania,440,Sprites,37.1
+Luxembourg,442,Sprites,20
+Madagascar,450,Sprites,38
+Malawi,454,Sprites,11.3
+Malaysia,458,Sprites,17.4
+Mali,466,Sprites,0
+Mauritania,478,Sprites,
+Mexico,484,Sprites,20.4
+Mongolia,496,Sprites,54.5
+Moldova,498,Sprites,25.2
+Montenegro,499,Sprites,44.1
+Morocco,504,Sprites,17
+Mozambique,508,Sprites,12.4
+Oman,512,Sprites,57
+Namibia,516,Sprites,13.9
+Nepal,524,Sprites,20
+Netherlands,528,Sprites,16.4
+New Caledonia,540,Sprites,
+Vanuatu,548,Sprites,36.1
+New Zealand,554,Sprites,28.9
+Nicaragua,558,Sprites,59.5
+Niger,562,Sprites,41.4
+Nigeria,566,Sprites,0.6
+Norway,578,Sprites,16.7
+Pakistan,586,Sprites,
+Panama,591,Sprites,19.4
+Papua New Guinea,598,Sprites,2.1
+Paraguay,600,Sprites,27.3
+Peru,604,Sprites,31.8
+Philippines,608,Sprites,72
+Poland,616,Sprites,36.1
+Portugal,620,Sprites,7.7
+Guinea-Bissau,624,Sprites,13.7
+Timor,626,Sprites,0
+Puerto Rico,630,Sprites,
+Qatar,634,Sprites,63.4
+Romania,642,Sprites,16.4
+Russia,643,Sprites,38.6
+Rwanda,646,Sprites,2.7
+Saudi Arabia,682,Sprites,
+Senegal,686,Sprites,8.5
+Serbia,688,Sprites,25.4
+Sierra Leone,694,Sprites,0
+Slovakia,703,Sprites,41.9
+Vietnam,704,Sprites,7.7
+Slovenia,705,Sprites,8
+Somalia,706,Sprites,
+South Africa,710,Sprites,17.8
+Zimbabwe,716,Sprites,12
+Spain,724,Sprites,27.8
+South Sudan,728,Sprites,
+Sudan,729,Sprites,
+Western Sahara,732,Sprites,
+Suriname,740,Sprites,48.8
+Swaziland,748,Sprites,
+Sweden,752,Sprites,14.1
+Switzerland,756,Sprites,18.5
+Syria,760,Sprites,87.2
+Tajikistan,762,Sprites,60.9
+Thailand,764,Sprites,68.9
+Togo,768,Sprites,18.2
+Trinidad and Tobago,780,Sprites,37.1
+United Arab Emirates,784,Sprites,81.9
+Tunisia,788,Sprites,3.8
+Turkey,792,Sprites,33.8
+Turkmenistan,795,Sprites,38
+Uganda,800,Sprites,3.1
+Ukraine,804,Sprites,51.5
+North Macedonia,807,Sprites,17.4
+Egypt,818,Sprites,33.1
+United Kingdom,826,Sprites,22.5
+Tanzania,834,Sprites,1.6
+United States,840,Sprites,34.9
+Burkina Faso,854,Sprites,5
+Uruguay,858,Sprites,21.1
+Uzbekistan,860,Sprites,56.9
+Venezuela,862,Sprites,29.2
+Yemen,887,Sprites,10.5
+Zambia,894,Sprites,0.4
+Afghanistan,4,Others,
+Albania,8,Others,1.6
+Antarctica,10,Others,
+Algeria,12,Others,0.0
+Angola,24,Others,0.8
+Azerbaijan,31,Others,1.6
+Argentina,32,Others,10.3
+Australia,36,Others,9.7
+Austria,40,Others,0.0
+Bahamas,44,Others,3.0
+Bangladesh,50,Others,
+Armenia,51,Others,0.1
+Belgium,56,Others,3.1
+Bhutan,64,Others,0.0
+Bolivia,68,Others,1.6
+Bosnia and Herzegovina,70,Others,3.2
+Botswana,72,Others,24.0
+Brazil,76,Others,0.5
+Belize,84,Others,2.3
+Solomon Islands,90,Others,0.5
+Brunei,96,Others,0
+Bulgaria,100,Others,1.1
+Myanmar,104,Others,0.1
+Burundi,108,Others,60.5
+Belarus,112,Others,26
+Cambodia,116,Others,0.1
+Cameroon,120,Others,55.0
+Canada,124,Others,3.7
+Central African Republic,140,Others,73.4
+Sri Lanka,144,Others,1.6
+Chad,148,Others,23.5
+Chile,152,Others,0.0
+China,156,Others,0.1
+"Taiwan, Province of China",158,Others,
+Colombia,170,Others,0.4
+Congo,178,Others,0.6
+Democratic Republic of Congo,180,Others,59.8
+Costa Rica,188,Others,0.8
+Croatia,191,Others,3.5
+Cuba,192,Others,0.4
+Cyprus,196,Others,0.0
+Czechia,203,Others,0.0
+Benin,204,Others,13.6
+Denmark,208,Others,0.8
+Dominican Republic,214,Others,1.5
+Ecuador,218,Others,0.8
+El Salvador,222,Others,0.2
+Equatorial Guinea,226,Others,0
+Ethiopia,231,Others,36.8
+Eritrea,232,Others,37.6
+Estonia,233,Others,9.6
+Falkland Islands (Malvinas),238,Others,
+Fiji,242,Others,0.1
+Finland,246,Others,9.1
+France,250,Others,1.7
+French Southern Territories,260,Others,
+Djibouti,262,Others,0.8
+Gabon,266,Others,1.1
+Georgia,268,Others,0.1
+Gambia,270,Others,89.4
+Germany,276,Others,0.1
+Ghana,288,Others,57.1
+Greece,300,Others,1.2
+Greenland,304,Others,
+Guatemala,320,Others,0.1
+Guinea,324,Others,0
+Guyana,328,Others,0.6
+Haiti,332,Others,0.1
+Honduras,340,Others,0.1
+Hungary,348,Others,0.0
+Iceland,352,Others,0.1
+India,356,Others,0.0
+Indonesia,360,Others,0.5
+Iran,364,Others,
+Iraq,368,Others,0.9
+Ireland,372,Others,6.2
+Israel,376,Others,1.4
+Italy,380,Others,0.0
+Cote d'Ivoire,384,Others,72.9
+Jamaica,388,Others,4.7
+Japan,392,Others,36.3
+Kazakhstan,398,Others,0.1
+Jordan,400,Others,1.6
+Kenya,404,Others,37.0
+North Korea,408,Others,0
+South Korea,410,Others,68.8
+Kuwait,414,Others,
+Kyrgyzstan,417,Others,0.0
+Laos,418,Others,0.1
+Lebanon,422,Others,1.5
+Lesotho,426,Others,28.9
+Latvia,428,Others,6.1
+Liberia,430,Others,0.6
+Libya,434,Others,
+Lithuania,440,Others,12.0
+Luxembourg,442,Others,0
+Madagascar,450,Others,0
+Malawi,454,Others,79.1
+Malaysia,458,Others,0.9
+Mali,466,Others,83
+Mauritania,478,Others,
+Mexico,484,Others,0.4
+Mongolia,496,Others,0.0
+Moldova,498,Others,2.0
+Montenegro,499,Others,2.0
+Morocco,504,Others,0.3
+Mozambique,508,Others,0.6
+Oman,512,Others,0.4
+Namibia,516,Others,15.5
+Nepal,524,Others,0
+Netherlands,528,Others,0.0
+New Caledonia,540,Others,
+Vanuatu,548,Others,0.0
+New Zealand,554,Others,0.3
+Nicaragua,558,Others,0.0
+Niger,562,Others,-0.1
+Nigeria,566,Others,91.1
+Norway,578,Others,2.7
+Pakistan,586,Others,
+Panama,591,Others,0.2
+Papua New Guinea,598,Others,0.0
+Paraguay,600,Others,1.1
+Peru,604,Others,0.0
+Philippines,608,Others,0.3
+Poland,616,Others,0.0
+Portugal,620,Others,4.7
+Guinea-Bissau,624,Others,41.3
+Timor,626,Others,0
+Puerto Rico,630,Others,
+Qatar,634,Others,0.5
+Romania,642,Others,-0.1
+Russia,643,Others,9.6
+Rwanda,646,Others,82.3
+Saudi Arabia,682,Others,
+Senegal,686,Others,1.0
+Serbia,688,Others,0.1
+Sierra Leone,694,Others,94.9
+Slovakia,703,Others,3.5
+Vietnam,704,Others,0.0
+Slovenia,705,Others,0
+Somalia,706,Others,
+South Africa,710,Others,7.7
+Zimbabwe,716,Others,23.9
+Spain,724,Others,0
+South Sudan,728,Others,
+Sudan,729,Others,
+Western Sahara,732,Others,
+Suriname,740,Others,2.8
+Swaziland,748,Others,
+Sweden,752,Others,1.7
+Switzerland,756,Others,1.3
+Syria,760,Others,0.1
+Tajikistan,762,Others,0.5
+Thailand,764,Others,0.1
+Togo,768,Others,28.8
+Trinidad and Tobago,780,Others,1.7
+United Arab Emirates,784,Others,0.3
+Tunisia,788,Others,0.1
+Turkey,792,Others,0.0
+Turkmenistan,795,Others,0.1
+Uganda,800,Others,85.8
+Ukraine,804,Others,0.8
+North Macedonia,807,Others,0.7
+Egypt,818,Others,0.5
+United Kingdom,826,Others,6.8
+Tanzania,834,Others,85.8
+United States,840,Others,0
+Burkina Faso,854,Others,74.3
+Uruguay,858,Others,0.0
+Uzbekistan,860,Others,0.1
+Venezuela,862,Others,1.3
+Yemen,887,Others,0
+Zambia,894,Others,60.5
