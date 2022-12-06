@@ -1,23 +1,23 @@
 import { VegaLite } from "react-vega"
 import { useState, useEffect, useRef } from 'react';
-import aggregatedCSV from '../data/aggregated.csv'
+import aggregatedCSV from '../data/data_final_nominal.csv'
 import Papa from "papaparse"
 import { useSelector } from "react-redux";
 
 const selectList = ["alcohol-use", "alcohol-frequency", "marijuana-use", "marijuana-frequency"];
-const axisList = ["Median age", "happiness_score", "gdp", "health"]
+const axisList = ["median age", "happiness score", "GDP per capita", "health", "alcohol consumption"]
 
 export function ScatterPlot() {
   const { age, gender, gdp, health, happy, alcohol } = useSelector(state => state)
-  const [medata, setMeData] = useState({"gdp": gdp, "happiness_score": happy, "Median age": age, "health": health})
+  const [medata, setMeData] = useState({"GDP per capita": gdp, "happiness score": happy, "median age": age, "health": health, "alcohol consumption": alcohol})
   
   const ref = useRef();
   const [width, setWidth] = useState(0)
   const [height, setHeight] = useState(0)
 
   const [countryList, setCountryList] = useState([1])
-  const [xaxis, setXaxis] = useState("gdp");
-  const [yaxis, setYaxis] = useState("happiness_score");
+  const [xaxis, setXaxis] = useState("GDP per capita");
+  const [yaxis, setYaxis] = useState("happiness score");
   const [aggdata, setAggData] = useState();
   const [Selected, setSelected] = useState();
 
@@ -40,7 +40,7 @@ export function ScatterPlot() {
   }, [ref.current])
 
   useEffect(() => {
-    setMeData({"gdp": gdp, "happiness_score": happy, "Median age": age, "health": health})
+    setMeData({"GDP per capita": gdp, "happiness score": happy, "median age": age, "health": health, "alcohol consumption": alcohol})
     if(aggdata){
       let x = [...aggdata]
       // console.log(x.map(d => Number(d[xaxis])||null))
@@ -55,7 +55,14 @@ export function ScatterPlot() {
         return d
       })
       x = x.sort((a, b) => a.diff - b.diff)
-      x = x.map(d => ({'name': d.Name, 'value': d.diff}))
+      x = x.map(d => ({'country': d.country, 'value': d.diff}))
+      x = x.slice(0, 5)
+      let sum = 0
+      x.forEach(d => sum += 1 / d.value)
+      x = x.map(d => {
+        d.value = 1 / d.value / sum
+        return d
+      })
       setCountryList(x.slice(0, 5))
     }
   }, [xaxis, yaxis, aggdata, age, gdp, happy, health])
@@ -82,7 +89,7 @@ export function ScatterPlot() {
               },
               {
                 "value": 10,
-                "test": {"field": "Name", "oneOf": [Selected]}
+                "test": {"field": "country", "oneOf": [Selected]}
               },
             ],
             "value": 1
@@ -96,13 +103,13 @@ export function ScatterPlot() {
               },
               {
                 "value": "green",
-                "test": {"field": "Name", "oneOf": [Selected]}
+                "test": {"field": "country", "oneOf": [Selected]}
               },
             ],
             "value": "gray"
           },
           "tooltip": [
-            {"field": "Name"},
+            {"field": "country"},
             {"field": xaxis, "type": "quantitative"},
             {"field": yaxis, "type": "quantitative"},
             {"field": "diff", "type": "quantitative"},
@@ -183,11 +190,11 @@ export function ScatterPlot() {
         {
          countryList.map((d, i) => {
           return (
-            <div className="text-left ml-5" onMouseOver={() => setSelected(d.name)} onMouseOut={() => setSelected("")}>
-              {i + 1}. {d.name}
+            <div className="text-left ml-5" onMouseOver={() => setSelected(d.country)} onMouseOut={() => setSelected("")}>
+              {i + 1}. {d.country}
               <div className="w-[10rem] bg-gray-300 h-4">
                   <div className="bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none" 
-                      style={{width: countryList[0].value * 100 / d.value + '%'}}>{ (countryList[0].value * 100 / d.value).toFixed(3) + "%"}</div>
+                      style={{width: 100 * d.value + '%'}}>{ (100 * d.value).toFixed(3) + "%"}</div>
               </div>
             </div>
           )

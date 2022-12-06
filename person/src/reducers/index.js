@@ -6,7 +6,7 @@ const initialState = {
     gdp: 20000,
     health: 0.8,
     happy: 5.4,
-    alcohol: 80,
+    alcohol: 10,
  };
 export const reducers = (state = initialState, action) => {
     if(action && action.type){
