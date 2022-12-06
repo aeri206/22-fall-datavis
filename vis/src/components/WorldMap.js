@@ -322,7 +322,7 @@ export function WorldMap(){
             <Grid
             gap="1.25rem"
             // margin={{top: 0, bottom: 0, left: 'medium', right: 'medium'}}
-            style={{paddingTop: '24px', paddingBottom: '24px', 'margin': '0 24px 0 24px'}}
+            style={{paddingTop: '15px', paddingBottom: '24px', 'margin': '0 24px 0 24px'}}
             rows={['40px', '450px', '700px' ]}
             columns={['630px','320px', '']}
             areas={[
