@@ -4,9 +4,10 @@ import './Scatter.css';
 
 const spec = {
   "config": {"view": {"continuousWidth": 500, "continuousHeight": 260}},
-  "data": {"url": "http://147.46.240.50:4999/scatter/aggregated.csv"},
-  "usermeta": ['Name', 'continent', 'Cases - cumulative total',
-  'Deaths - cumulative total', 'GDP - per capita (PPP)',
+  "data": {"url": "http://147.46.240.50:4999/aggregated.csv"},
+  "usermeta": [
+    'Name', 'continent', 'Cases - cumulative total',
+  'Deaths - cumulative total', 'GDP - per capita',
   'Industrial production growth rate', 'Unemployment rate',
   'Distribution of family income - Gini index', 'Birth rate',
   'Death rate', 'Net migration rate', 'Maternal mortality rate',
@@ -22,7 +23,7 @@ const spec = {
         "input": "select",
         "name": "X Axis : ", 
         "options": ['Cases - cumulative total',
-        'Deaths - cumulative total', 'GDP - per capita (PPP)',
+        'Deaths - cumulative total', 'GDP - per capita',
         'Industrial production growth rate', 'Unemployment rate',
         'Distribution of family income - Gini index', 'Birth rate',
         'Death rate', 'Net migration rate', 'Maternal mortality rate',
@@ -33,12 +34,13 @@ const spec = {
     },
     {
       "name": "y",
-      "value": "alcohol death both",
+      // "value": "alcohol death both",
+      "value": "GDP - per capita",
       "bind": {
         "input": "select",
         "name": "Y Axis : ", 
         "options": ['Cases - cumulative total',
-        'Deaths - cumulative total', 'GDP - per capita (PPP)',
+        'Deaths - cumulative total', 'GDP - per capita',
         'Industrial production growth rate', 'Unemployment rate',
         'Distribution of family income - Gini index', 'Birth rate',
         'Death rate', 'Net migration rate', 'Maternal mortality rate',
