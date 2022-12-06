@@ -2,7 +2,7 @@ import { VegaLite } from 'react-vega';
 
 const spec = {
   "config": {"view": {"continuousWidth": 500, "continuousHeight": 500}},
-  "data": {"url": "http://147.46.240.50:4999/scatter/data_final.tsv"},
+  "data": {"url": "http://147.46.240.50:4999/scatter/data_final.csv"},
   "usermeta": [
     "country",
     "continent",

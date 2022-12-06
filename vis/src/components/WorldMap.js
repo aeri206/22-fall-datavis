@@ -5,10 +5,9 @@ import { Select, Grid, Box, Grommet, DataTable, Heading } from 'grommet';
 
 import { data2015, data2018, data2010, code } from '../data/data';
 import Scatter from "./Scatter";
+import './WorldMap.css';
 
 import embed from 'vega-embed';
-
-import Papa from "papaparse"
 
 
 
@@ -370,15 +369,16 @@ export function WorldMap(){
                 <Grommet theme={{
                     dataTable: {
                         body: {
-                            container: {extend: () => `height: 300px`}
+                            container: {extend: () => `height: 300px; font-size: 15px;`},
                         },
+                        header: {font: {size: '15px'}},
                         size: 'medium',
                         pinned: {
                             header: {
                               background: {color: 'light-2'},
                               extend: 'box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2); font-weight: 600',
-
                             },
+                            
                         }
                         
                     }
@@ -392,11 +392,12 @@ export function WorldMap(){
                       }
                 }
                 paginate={true} columns={[
-                    {property: 'country', header: 'Country'},
+                    {property: 'country', header: 'Country', size:'300px'},
                     
                     {property: 'beer', header: 'Beer'},
                     {property: 'wine', header: 'Wine'},
-                    {property: 'sprites', header: 'Sprites'}
+                    {property: 'sprites', header: 'Sprites'},
+                    {property: 'total', header: 'Total', render: datum => {return (datum.total? datum.total.toFixed(2) : '')}}
                 ]} data={data} />
                 </Grommet>
             </Box>
