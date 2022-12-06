@@ -34,7 +34,7 @@ const spec = {
   "params": [
     {
       "name": "x",
-      "value": "COVID cases/100k",
+      "value": "heavy episodic drinking(30 days)",
       "bind": {
         "input": "select",
         "name": "X Axis : ", 
@@ -61,7 +61,7 @@ const spec = {
     },
     {
       "name": "y",
-      "value": "abstainer(lifetime)",
+      "value": "alcohol attributable death",
       "bind": {
         "input": "select",
         "name": "Y Axis : ", 
