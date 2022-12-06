@@ -12,8 +12,7 @@ const spec = {
   'Distribution of family income - Gini index', 'Birth rate',
   'Death rate', 'Net migration rate', 'Maternal mortality rate',
   'Life expectancy at birth', 'life_exp', 'gdp', 'happiness_score',
-  'health', 'freedom', 'government_trust', 'alcohol death both',
-  'consumption drinkers Both sexes'],
+  'health', 'freedom', 'government_trust', 'alcohol death both','Consumption - drinkers'],
   "height": 200,
   "params": [
     {
@@ -29,7 +28,7 @@ const spec = {
         'Death rate', 'Net migration rate', 'Maternal mortality rate',
         'Life expectancy at birth', 'life_exp', 'gdp', 'happiness_score',
         'health', 'freedom', 'government_trust', 'alcohol death both',
-        'consumption drinkers Both sexes']
+        'Consumption - drinkers']
       }
     },
     {
@@ -46,7 +45,7 @@ const spec = {
         'Death rate', 'Net migration rate', 'Maternal mortality rate',
         'Life expectancy at birth', 'life_exp', 'gdp', 'happiness_score',
         'health', 'freedom', 'government_trust', 'alcohol death both',
-        'consumption drinkers Both sexes']
+        'Consumption - drinkers']
       }
     }
   ],
