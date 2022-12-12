@@ -40,7 +40,8 @@ export function ScatterPlot() {
   }, [ref.current])
 
   useEffect(() => {
-    setMeData({"GDP per capita": gdp, "happiness score": happy, "median age": age, "health": health, "alcohol consumption": alcohol})
+    let new_data = {"GDP per capita": gdp, "happiness score": happy, "median age": age, "health": health, "alcohol consumption": alcohol}
+    setMeData(new_data)
     if(aggdata){
       let x = [...aggdata]
       // console.log(x.map(d => Number(d[xaxis])||null))
@@ -49,7 +50,7 @@ export function ScatterPlot() {
       let ymax = Math.max(...x.map(d => Number(d[yaxis])||null))
       let ymin = Math.min(...x.map(d => Number(d[yaxis])||null))
       x = x.map(d => {
-        let x = ((d[xaxis] - medata[xaxis]) / (xmax - xmin)) ** 2 + ((d[yaxis] - medata[yaxis]) / (ymax - ymin)) ** 2;
+        let x = ((d[xaxis] - new_data[xaxis]) / (xmax - xmin)) ** 2 + ((d[yaxis] - new_data[yaxis]) / (ymax - ymin)) ** 2;
         if(isNaN(x)) {x = 1}
         d['diff'] = x
         return d
