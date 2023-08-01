@@ -1,0 +1,131 @@
+name,gdp_per_capita,alcohol_death,consumption_drinkers,region,subregion,value
+Afghanistan,0.30070585,0.2,24.4,Asia,Southern Asia,25500100
+Albania,0.906653047,6.4,13.8,Europe,Southern Europe,2821977
+Algeria,0.943856001,1.0,25.8,Africa,Northern Africa,37900000
+Argentina,1.028465629,4.4,14.6,Americas,South America,40117096
+Armenia,0.808262408,6.0,21.2,Asia,Western Asia,3024100
+Australia,1.310396433,4.6,13.2,Oceania,Australia and New Zealand,23254142
+Austria,1.317285538,5.3,14.4,Europe,Western Europe,8501502
+Azerbaijan,0.990272701,5.9,3.8,Asia,Western Asia,9235100
+Bahrain,1.296692252,1.9,20.8,Asia,Western Asia,1234571
+Bangladesh,0.556156278,0.9,0.9,Asia,Southern Asia,152518015
+Belarus,1.018854499,24.0,15.7,Europe,Eastern Europe,9465500
+Belgium,1.295842767,5.4,15.4,Europe,Western Europe,11175653
+Benin,0.366244704,2.6,11.1,Africa,Western Africa,10323000
+Bolivia,0.730976343,6.1,10.1,Americas,South America,10027254
+Bosnia and Herzegovina,0.91839546,4.6,12.5,Europe,Southern Europe,3791622
+Botswana,0.997548997,5.7,25.6,Africa,Southern Africa,2024904
+Brazil,0.952679873,6.9,19.2,Americas,South America,201032714
+Bulgaria,1.046554685,5.9,18.5,Europe,Eastern Europe,7282041
+Burkina Faso,0.302467644,4.5,20.9,Africa,Western Africa,17322796
+Cambodia,0.544634938,8.0,20.3,Asia,South-Eastern Asia,15135000
+Cameroon,0.503958046,6.0,21.0,Africa,Middle Africa,20386799
+Canada,1.301647663,4.5,13.4,Americas,Northern America,35158304
+Chad,0.302287489,1.8,6.6,Africa,Middle Africa,12825000
+Chile,1.096992493,5.4,13.4,Americas,South America,16634603
+China,0.990533412,3.8,12.7,Asia,Eastern Asia,1361170000
+Colombia,0.93220371,5.1,14.7,Americas,South America,47330000
+Costa Rica,0.981107712,4.1,12.5,Americas,Central America,4667096
+Croatia,1.109024286,6.1,14.2,Europe,Southern Europe,4290612
+Cyprus,1.21279943,3.6,14.5,Asia,Western Asia,865878
+Denmark,1.326948524,5.6,13.2,Europe,Northern Europe,5623501
+Dominican Republic,0.983191848,6.6,14.9,Americas,Caribbean,9445281
+Ecuador,0.853383601,5.7,9.3,Americas,South America,15617900
+Egypt,0.875228941,1.8,12.8,Africa,Northern Africa,83661000
+El Salvador,0.748940408,7.2,12.2,Americas,Central America,6340000
+Estonia,1.192441225,20.2,20.9,Europe,Northern Europe,1286540
+Ethiopia,0.315125644,3.4,12.0,Africa,Eastern Africa,86613986
+Finland,1.285189509,5.8,14.0,Europe,Northern Europe,5445883
+France,1.268129349,5.8,15.9,Europe,Western Europe,65806000
+Gabon,0.988044381,11.4,17.2,Africa,Middle Africa,1672000
+Georgia,0.847198069,8.1,27.3,Asia,Western Asia,-1
+Germany,1.314184546,5.2,16.3,Europe,Western Europe,80523700
+Ghana,0.575862467,3.4,10.0,Africa,Western Africa,24658823
+Greece,1.128070116,4.0,14.8,Europe,Southern Europe,10815197
+Guatemala,0.753815711,5.5,8.5,Americas,Central America,15438384
+Guinea,0.390007734,1.6,5.4,Africa,Western Africa,10824200
+Haiti,0.284734428,4.4,15.7,Americas,Caribbean,10413211
+Honduras,0.598763585,5.2,12.9,Americas,Central America,8555072
+Hungary,1.164307117,6.9,16.6,Europe,Eastern Europe,9906000
+Iceland,1.326501608,3.8,11.8,Europe,Northern Europe,325010
+India,0.730576158,5.4,13.7,Asia,Southern Asia,1236670000
+Indonesia,0.891720712,1.7,3.1,Asia,South-Eastern Asia,237641326
+Iran,1.029322505,0.5,21.3,Asia,Southern Asia,77068000
+Iraq,0.982018709,0.5,11.0,Asia,Western Asia,34035000
+Ireland,1.446886778,5.1,14.5,Europe,Northern Europe,-1
+Israel,1.216463685,2.5,6.4,Asia,Western Asia,8092700
+Italy,1.236396074,3.6,11.3,Europe,Southern Europe,59829079
+Jamaica,0.779058397,2.7,11.3,Americas,Caribbean,2711476
+Japan,1.26672411,4.2,13.1,Asia,Eastern Asia,127290000
+Jordan,0.785179198,1.0,23.5,Asia,Western Asia,6512600
+Kazakhstan,1.122594237,10.3,19.4,Asia,Central Asia,17099000
+Kenya,0.476413399,4.0,13.1,Africa,Eastern Africa,44354000
+Kuwait,1.424833655,0.4,0.8,Asia,Western Asia,3582054
+Kyrgyzstan,0.513180971,10.9,23.6,Asia,Central Asia,5551900
+Latvia,1.14139545,21.5,22.4,Europe,Northern Europe,2014000
+Lebanon,0.889232516,1.3,25.4,Asia,Western Asia,4822000
+Liberia,0.174103007,5.2,17.5,Africa,Western Africa,4294000
+Libya,1.021913767,0.2,16.6,Africa,Northern Africa,6202000
+Lithuania,1.193559647,24.5,23.7,Europe,Northern Europe,2950684
+Luxembourg,1.536676049,5.8,13.7,Europe,Western Europe,537000
+Madagascar,0.244553208,2.8,8.8,Africa,Eastern Africa,20696070
+Malawi,0.176534727,3.0,14.7,Africa,Eastern Africa,16363000
+Malaysia,1.168421626,2.1,3.0,Asia,South-Eastern Asia,29793600
+Mali,0.352462649,1.3,5.4,Africa,Western Africa,15302000
+Malta,1.252513289,3.5,11.7,Europe,Southern Europe,416055
+Mauritania,0.539684892,0.2,3.0,Africa,Western Africa,3461041
+Mauritius,1.07366395,3.0,10.9,Africa,Eastern Africa,1257900
+Mexico,1.024387479,6.0,15.0,Americas,Central America,118395054
+Mongolia,0.904872775,11.6,22.0,Asia,Eastern Asia,2754685
+Montenegro,1.010150075,6.2,14.0,Europe,Southern Europe,620029
+Morocco,0.75862211,0.8,21.6,Africa,Northern Africa,33087700
+Myanmar,0.67809093,6.6,15.4,Asia,South-Eastern Asia,-1
+Nepal,0.444050372,2.3,6.9,Asia,Southern Asia,26494504
+Netherlands,1.338946342,3.6,11.4,Europe,Western Europe,16807300
+New Zealand,1.242317915,4.2,13.7,Oceania,Australia and New Zealand,4478810
+Nicaragua,0.620033145,7.7,15.1,Americas,Central America,6071045
+Niger,0.108330332,1.0,2.3,Africa,Western Africa,17129076
+Nigeria,0.645901859,7.9,24.3,Africa,Western Africa,173615000
+Norway,1.42420733,3.4,9.7,Europe,Northern Europe,5077798
+Pakistan,0.616799474,0.6,20.3,Asia,Southern Asia,184845000
+Panama,1.097667813,5.3,16.2,Americas,Central America,3405813
+Paraguay,0.897990823,6.3,19.1,Americas,South America,6783374
+Peru,0.91854918,6.9,11.7,Americas,South America,30475144
+Philippines,0.775120676,5.2,19.0,Asia,South-Eastern Asia,98678000
+Poland,1.16922915,6.9,16.4,Europe,Eastern Europe,38533299
+Portugal,1.168800831,5.9,16.5,Europe,Southern Europe,10562178
+Moldova,0.707916796,26.1,27.1,Europe,Eastern Europe,3559500
+Romania,1.120401621,8.6,17.6,Europe,Eastern Europe,20121641
+Russia,1.126999617,21.6,20.8,Europe,Eastern Europe,143500000
+Rwanda,0.343242675,6.7,24.2,Africa,Eastern Africa,10537222
+Saudi Arabia,1.334328532,0.2,3.0,Asia,Western Asia,29994272
+Senegal,0.504061818,1.6,3.3,Africa,Western Africa,13567338
+Serbia,0.988181829,4.5,17.6,Europe,Southern Europe,7181505
+Sierra Leone,0.240560383,4.6,17.2,Africa,Western Africa,6190280
+Singapore,1.519580126,2.4,2.8,Asia,South-Eastern Asia,5399200
+Slovakia,1.194837689,8.3,16.0,Europe,Eastern Europe,5412008
+Slovenia,1.208652496,8.0,17.0,Europe,Southern Europe,2061405
+South Africa,0.902140439,6.4,28.9,Africa,Southern Africa,52981991
+Spain,1.230535269,4.3,13.7,Europe,Southern Europe,46704314
+Sri Lanka,0.897986948,4.6,13.9,Asia,Southern Asia,20277597
+Sweden,1.322235227,3.6,12.0,Europe,Northern Europe,9625444
+Switzerland,1.39077425,4.5,13.6,Europe,Western Europe,8085300
+Turkey,1.127169251,1.4,24.8,Asia,Western Asia,75627384
+Tajikistan,0.474874616,5.3,15.0,Asia,Central Asia,8000000
+Thailand,1.007029295,7.4,19.6,Asia,South-Eastern Asia,65926261
+United Kingdom,1.273061037,4.6,14.7,Europe,Northern Europe,63705000
+Togo,0.268116266,2.7,11.5,Africa,Western Africa,6191155
+Tunisia,0.874742687,1.4,33.4,Africa,Northern Africa,10833431
+Turkmenistan,1.008963585,9.3,17.4,Asia,Central Asia,5240000
+Uganda,0.312337428,6.5,25.4,Africa,Eastern Africa,35357000
+Ukraine,0.780434608,20.5,21.1,Europe,Eastern Europe,45461627
+United Arab Emirates,1.431086421,3.5,18.7,Asia,Western Asia,8264070
+Tanzania,0.457163125,7.3,24.7,Africa,Eastern Africa,44928923
+United States,1.37398684,4.9,13.2,Americas,Northern America,317101000
+Uruguay,1.071000457,3.9,15.4,Americas,South America,3286314
+Uzbekistan,0.696652949,6.5,12.5,Asia,Central Asia,30183400
+Venezuela,0.770238638,6.7,14.5,Americas,South America,28946101
+VietNam,0.718092382,7.3,21.1,Asia,South-Eastern Asia,90388000
+Yemen,0.392701775,0.1,7.3,Asia,Western Asia,24527000
+Zambia,0.536833763,4.2,17.0,Africa,Eastern Africa,13092666
+Zimbabwe,0.425564021,3.1,25.4,Africa,Eastern Africa,12973808
